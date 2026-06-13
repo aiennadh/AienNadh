@@ -1,854 +1,1010 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <meta
-      name="description"
-      content="Professional portfolio of a security-focused software developer and Red Team specialist. Showcasing technical skills, certifications, and cyber security expertise."
-    />
-    <title>Nurul Ain Nadhirah</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Professional portfolio of Nurul Ain Nadhirah — security-focused software developer, Red Team specialist, and forensic analyst. Showcasing technical skills, certifications, and industry-ready competencies." />
+  <title>Nurul Ain Nadhirah · Red Team Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      body {
-        font-family: "Inter", sans-serif;
-        background-color: #f5f7fc;
-        color: #1a2c3e;
-        line-height: 1.5;
-        scroll-behavior: smooth;
-      }
+    body {
+      font-family: "Inter", sans-serif;
+      background-color: #f4f7fc;
+      color: #0a2a3b;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
 
-      .container {
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0 2rem;
-      }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
 
-      h1,
-      h2,
-      h3 {
-        font-weight: 600;
-        letter-spacing: -0.01em;
-      }
+    h1, h2, h3 {
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
 
-      h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;
-        margin-bottom: 0.5rem;
-      }
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #0B4F6C 0%, #1C6F8C 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
 
-      h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-        border-left: 5px solid #0b4f6c;
-        padding-left: 1rem;
-      }
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1.8rem;
+      border-left: 6px solid #1C6F8C;
+      padding-left: 1.2rem;
+      font-weight: 600;
+    }
 
-      h3 {
-        font-size: 1.3rem;
-        margin-bottom: 0.75rem;
-        color: #0b4f6c;
-      }
+    h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.9rem;
+      color: #125a77;
+      font-weight: 600;
+    }
 
-      .section {
-        padding: 3.5rem 0;
-        border-bottom: 1px solid #e2e8f0;
-      }
+    .section {
+      padding: 4rem 0;
+      border-bottom: 1px solid #e2edf5;
+    }
 
-      .section:last-of-type {
-        border-bottom: none;
-      }
+    .section:last-of-type {
+      border-bottom: none;
+    }
 
-      .navbar {
-        background-color: #ffffff;
-        box-shadow:
-          0 1px 3px rgba(0, 0, 0, 0.03),
-          0 1px 2px rgba(0, 0, 0, 0.05);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        border-bottom: 2px solid #dce5ef;
-      }
+    .navbar {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(4px);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #e0ecf4;
+    }
 
-      .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        max-width: 1280px;
-        margin: 0 auto;
-      }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
 
-      .logo-area {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-      }
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
 
-      .logo-img {
-        width: 42px;
-        height: 42px;
-        object-fit: contain;
-      }
+    .logo-img {
+      width: 44px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 14px;
+      background: #eef3fc;
+      border: 1px solid #cde0ec;
+    }
 
-      .logo-text {
-        font-weight: 700;
-        font-size: 1.2rem;
-        color: #0f2c3b;
-        letter-spacing: -0.3px;
-      }
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #0b3f55;
+      letter-spacing: -0.3px;
+    }
 
-      .nav-links {
-        display: flex;
-        gap: 2rem;
-      }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
 
-      .nav-links a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #2c4758;
-        transition: color 0.2s ease;
-        font-size: 0.95rem;
-      }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #1a5068;
+      transition: all 0.2s;
+      font-size: 0.95rem;
+    }
 
-      .nav-links a:hover {
-        color: #0b5e7e;
-        border-bottom: 2px solid #0b5e7e;
-        padding-bottom: 0.2rem;
-      }
+    .nav-links a:hover {
+      color: #0b6e8f;
+      border-bottom: 2px solid #0b6e8f;
+      padding-bottom: 0.2rem;
+    }
 
-      .hero {
-        background: linear-gradient(135deg, #f8fafd 0%, #edf2f7 100%);
-        padding: 3.5rem 0;
-      }
+    .hero {
+      background: linear-gradient(125deg, #ffffff 0%, #f0f6fd 100%);
+      padding: 4rem 0;
+    }
 
-      .hero-grid {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 2rem;
-        justify-content: space-between;
-      }
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2.5rem;
+      justify-content: space-between;
+    }
 
-      .hero-content {
-        flex: 2;
-        min-width: 260px;
-      }
+    .hero-content {
+      flex: 2;
+      min-width: 260px;
+    }
 
-      .hero-badge {
-        background-color: #e2edf2;
-        display: inline-block;
-        padding: 0.25rem 0.9rem;
-        border-radius: 30px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        color: #0b4f6c;
-        margin-bottom: 1rem;
-        letter-spacing: 0.3px;
-      }
+    .hero-badge {
+      background: #e2edf4;
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #0b4f6c;
+      margin-bottom: 1.2rem;
+    }
 
-      .hero-content p {
-        font-size: 1.1rem;
-        color: #2c4b5f;
-        margin: 1rem 0 1.2rem 0;
-        max-width: 600px;
-      }
+    .hero-content p {
+      font-size: 1.1rem;
+      color: #2c556b;
+      margin: 1rem 0 1.5rem 0;
+      max-width: 620px;
+    }
 
-      .hero-image {
-        flex: 1;
-        text-align: center;
-        background: #ffffff;
-        border-radius: 24px;
-        padding: 1rem;
-        box-shadow:
-          0 8px 20px rgba(0, 0, 0, 0.02),
-          0 2px 6px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e9eef3;
-      }
+    .hero-image {
+      flex: 1;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 1rem;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e2ecf5;
+    }
 
-      .hero-image img {
-        max-width: 180px;
-        width: 100%;
-        height: auto;
-        border-radius: 16px;
-      }
+    .hero-image img {
+      max-width: 190px;
+      width: 100%;
+      border-radius: 24px;
+      object-fit: cover;
+    }
 
-      .btn {
-        display: inline-flex;
-        background-color: #1e5f74;
-        color: white;
-        padding: 0.7rem 1.6rem;
-        border-radius: 40px;
-        font-weight: 500;
-        text-decoration: none;
-        transition: background 0.2s;
-        border: none;
-        font-size: 0.9rem;
-      }
+    .btn {
+      display: inline-flex;
+      background: #1a6c89;
+      color: white;
+      padding: 0.75rem 1.8rem;
+      border-radius: 44px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.2s;
+      border: none;
+      font-size: 0.9rem;
+    }
 
-      .btn-outline {
-        background: transparent;
-        border: 1.5px solid #1e5f74;
-        color: #1e5f74;
-        margin-left: 0.75rem;
-      }
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #1a6c89;
+      color: #1a6c89;
+      margin-left: 0.8rem;
+    }
 
-      .btn-outline:hover {
-        background: #eef4f9;
-      }
+    .btn-outline:hover {
+      background: #e6f0f5;
+    }
 
-      .btn:hover {
-        background-color: #0a445a;
-      }
+    .btn:hover {
+      background: #0c5570;
+      transform: translateY(-2px);
+    }
 
-      .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 2rem;
-        margin-top: 1rem;
-      }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
 
-      .skill-card {
-        background: #ffffff;
-        border-radius: 20px;
-        padding: 1.5rem;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
-        border: 1px solid #eef2f8;
-        transition: all 0.2s;
-      }
+    .skill-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 1.8rem;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.02);
+      border: 1px solid #e9f0f6;
+      transition: 0.2s;
+    }
 
-      .skill-card:hover {
-        border-color: #cddfe9;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
-      }
+    .skill-card:hover {
+      border-color: #cde0ec;
+      box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+    }
 
-      .skill-title {
-        font-weight: 700;
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        color: #0b4f6c;
-        border-left: 3px solid #5f9db2;
-        padding-left: 0.8rem;
-      }
+    .skill-title {
+      font-weight: 800;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #0f5775;
+      border-left: 4px solid #4595b0;
+      padding-left: 0.9rem;
+    }
 
-      .skill-list {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-top: 0.8rem;
-      }
+    .skill-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
 
-      .skill-list li {
-        background: #eef3fa;
-        padding: 0.3rem 0.9rem;
-        border-radius: 30px;
-        font-size: 0.85rem;
-        font-weight: 500;
-        color: #1a4b61;
-      }
+    .skill-list li {
+      background: #eef4fa;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #135e7c;
+    }
 
-      .chip-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin: 0.8rem 0;
-      }
+    .chip {
+      background: #eef4fa;
+      padding: 0.25rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
 
-      .chip {
-        background: #edf2f9;
-        padding: 0.2rem 0.9rem;
-        border-radius: 30px;
-        font-size: 0.8rem;
-        font-weight: 500;
-      }
+    .credential-box {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 1.8rem;
+      border: 1px solid #e9f0f6;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.8rem;
+      justify-content: space-between;
+    }
 
-      .credential-box {
-        background: #ffffff;
-        border-radius: 20px;
-        padding: 1.5rem;
-        margin-top: 1.2rem;
-        border: 1px solid #eef2f8;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        justify-content: space-between;
-      }
+    .cred-item {
+      flex: 1;
+      min-width: 180px;
+    }
 
-      .cred-item {
-        flex: 1;
-        min-width: 180px;
-      }
+    .cred-item strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+      color: #1a6c89;
+    }
 
-      .cred-item strong {
-        display: block;
-        font-size: 1rem;
-        margin-bottom: 0.3rem;
-        color: #1e5f74;
-      }
+    .comparison-table {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem;
+      border: 1px solid #e9f0f6;
+      margin-top: 1rem;
+    }
 
-      .tool-strip {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-        margin-top: 1rem;
-      }
+    .comparison-row {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #eef2f8;
+      padding: 1rem 0;
+    }
 
-      .two-columns {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-top: 1rem;
-      }
+    .comparison-row:last-child {
+      border-bottom: none;
+    }
 
-      .col {
-        flex: 1;
-        background: #ffffff;
-        border-radius: 20px;
-        padding: 1.5rem;
-        border: 1px solid #eef2f8;
-      }
+    .comp-cat {
+      flex: 1.2;
+      font-weight: 700;
+      color: #0f5775;
+    }
 
-      .col h4 {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
-        font-weight: 600;
-      }
+    .comp-current {
+      flex: 2;
+    }
 
-      hr {
-        margin: 1rem 0;
-        border: 0;
-        height: 1px;
-        background: #e2edf2;
-      }
+    .comp-industry {
+      flex: 2;
+      background: #f8fbfe;
+      border-radius: 20px;
+      padding: 0.4rem 0.9rem;
+    }
 
-      .marquee-container {
-        background: #ffffff;
-        border-radius: 24px;
-        padding: 1.2rem 0.5rem;
-        border: 1px solid #eef2f8;
-        overflow: hidden;
-        white-space: nowrap;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
-      }
+    .reflection-wrapper {
+      background: linear-gradient(135deg, #ffffff 0%, #f8fbfe 100%);
+      border-radius: 32px;
+      border: 1px solid #e2ecf5;
+      overflow: hidden;
+      box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.08);
+    }
 
-      .marquee-track {
-        display: inline-block;
-        animation: scrollMarquee 22s linear infinite;
-      }
+    .reflection-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      background: #eef3f8;
+      border-bottom: 1px solid #dce6ef;
+      gap: 0.25rem;
+      padding: 0.5rem 1rem 0 1rem;
+    }
 
-      .marquee-track img {
-        height: 200px;
-        width: auto;
-        object-fit: cover;
-        border-radius: 16px;
-        margin: 0 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        border: 1px solid #e2edf2;
-        vertical-align: middle;
-      }
+    .reflection-tab {
+      padding: 0.9rem 1.8rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #2a607a;
+      cursor: pointer;
+      border-radius: 20px 20px 0 0;
+      transition: all 0.2s ease;
+      background: transparent;
+      border: none;
+      font-family: inherit;
+    }
 
-      @keyframes scrollMarquee {
-        0% {
-          transform: translateX(0%);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
+    .reflection-tab:hover {
+      background: rgba(26, 108, 137, 0.1);
+      color: #0f5775;
+    }
 
-      .marquee-container:hover .marquee-track {
-        animation-play-state: paused;
-      }
+    .reflection-tab.active {
+      background: white;
+      color: #1a6c89;
+      border-bottom: 3px solid #1a6c89;
+    }
 
-      .evidence-title {
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-        color: #1e5f74;
-        letter-spacing: 0.3px;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
+    .reflection-panes {
+      padding: 2rem;
+    }
 
-      footer {
-        background: #eef3fa;
-        padding: 2rem 0;
-        text-align: center;
-        font-size: 0.85rem;
-        color: #2c5a6e;
-        margin-top: 0.5rem;
-        border-top: 1px solid #d9e2ec;
-      }
+    .reflection-pane {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
 
-      @media (max-width: 760px) {
-        .container {
-          padding: 0 1.2rem;
-        }
-        .nav-container {
-          flex-direction: column;
-          gap: 0.7rem;
-          padding: 1rem;
-        }
-        .nav-links {
-          gap: 1.2rem;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
-        h1 {
-          font-size: 1.9rem;
-        }
-        h2 {
-          font-size: 1.5rem;
-        }
-        .hero-grid {
-          flex-direction: column-reverse;
-          text-align: center;
-        }
-        .hero-content p {
-          margin-left: auto;
-          margin-right: auto;
-        }
-        .btn-group {
-          justify-content: center;
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .btn-outline {
-          margin-left: 0;
-          margin-top: 0.5rem;
-        }
-        .marquee-track img {
-          height: 140px;
-        }
-      }
+    .reflection-pane.active-pane {
+      display: block;
+    }
 
-      @media (max-width: 480px) {
-        .skills-grid {
-          grid-template-columns: 1fr;
-        }
-        .credential-box {
-          flex-direction: column;
-          gap: 1rem;
-        }
-        .marquee-track img {
-          height: 110px;
-          margin: 0 8px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo-area">
-          <img
-            src="nad.jpeg"
-            alt="Logo"
-            class="logo-img"
-            onerror="
-              this.onerror = null;
-              this.src = 'https://placehold.co/42x42/eef2f8/1a2c3e?text=RT';
-            "
-          />
-          <span class="logo-text">Nurul Ain Nadhirah</span>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .journey-card, .value-card, .strength-card, .hire-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 1.8rem;
+      border: 1px solid #e9f0f6;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote-block {
+      background: linear-gradient(115deg, #eef4fa 0%, #e6f0f8 100%);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      font-style: italic;
+      font-weight: 500;
+      color: #0f5775;
+      border-left: 6px solid #1a6c89;
+      margin-top: 1rem;
+    }
+
+    .skill-badge-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    .skill-badge {
+      background: #eef4fa;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #135e7c;
+      transition: all 0.2s;
+    }
+
+    .skill-badge:hover {
+      background: #1a6c89;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .two-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 680px) {
+      .two-col-grid { grid-template-columns: 1fr; }
+      .reflection-tab { padding: 0.6rem 1rem; font-size: 0.8rem; }
+      .reflection-panes { padding: 1.2rem; }
+    }
+
+    .marquee-container {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 1.2rem 0.5rem;
+      border: 1px solid #e9f0f6;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-track {
+      display: inline-block;
+      animation: scrollMarquee 40s linear infinite;
+    }
+
+    .marquee-track img {
+      height: 190px;
+      width: auto;
+      object-fit: cover;
+      border-radius: 18px;
+      margin: 0 10px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2ecf5;
+      vertical-align: middle;
+    }
+
+    @keyframes scrollMarquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .marquee-container:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    .roadmap-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .roadmap-phase {
+      background: white;
+      border-radius: 28px;
+      border: 1px solid #e9f0f6;
+      overflow: hidden;
+    }
+
+    .roadmap-header {
+      background: #eef4fa;
+      padding: 1rem 1.8rem;
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #0f5775;
+      border-bottom: 1px solid #dde6ef;
+    }
+
+    .short-header {
+      background: #d9eaf3;
+      color: #0c4c66;
+    }
+
+    .long-header {
+      background: #cde2ed;
+      color: #094c66;
+    }
+
+    .roadmap-body {
+      padding: 1.5rem 1.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: space-between;
+    }
+
+    .roadmap-item {
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .roadmap-year {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #1a6c89;
+      margin-bottom: 0.6rem;
+      display: inline-block;
+      border-bottom: 2px solid #96c0d0;
+      padding-bottom: 0.2rem;
+    }
+
+    .roadmap-desc {
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: #1d4f65;
+    }
+
+    .career-card {
+      background: #ffffff;
+      border-radius: 28px;
+      padding: 2rem;
+      border: 1px solid #e9f0f6;
+      margin-top: 1rem;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.02);
+    }
+
+    .career-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1rem;
+    }
+
+    .career-subsection {
+      background: #fbfefe;
+      border-radius: 24px;
+      padding: 1.2rem 1.4rem;
+      border-left: 4px solid #1a6c89;
+    }
+
+    .career-subsection h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: #0f5775;
+      font-weight: 700;
+    }
+
+    .career-subsection ul, .career-subsection p {
+      font-size: 0.9rem;
+      color: #2a5f78;
+      line-height: 1.5;
+    }
+
+    .career-subsection ul {
+      margin-left: 1.2rem;
+    }
+
+    .career-subsection li {
+      margin: 0.4rem 0;
+    }
+
+    footer {
+      background: #e9f2f8;
+      padding: 2rem 0;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #1e5f78;
+      border-top: 1px solid #d4e2ed;
+    }
+
+    @media (max-width: 780px) {
+      .container { padding: 0 1.3rem; }
+      .nav-container { flex-direction: column; gap: 0.8rem; }
+      .nav-links { gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      .hero-grid { flex-direction: column-reverse; text-align: center; }
+      .btn-group { justify-content: center; display: flex; flex-wrap: wrap; }
+      .btn-outline { margin-left: 0; margin-top: 0.6rem; }
+      .comparison-row { flex-direction: column; gap: 0.7rem; }
+      .marquee-track img { height: 130px; }
+      .roadmap-body { flex-direction: column; }
+    }
+
+    @media (max-width: 480px) {
+      .skills-grid { grid-template-columns: 1fr; }
+      .credential-box { flex-direction: column; }
+      .marquee-track img { height: 105px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-area">
+        <img src="nad.jpeg" alt="Nurul Ain Nadhirah" class="logo-img" />
+        <span class="logo-text">Nurul Ain Nadhirah</span>
+      </div>
+      <div class="nav-links">
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certificates</a>
+        <a href="#evidence">Evidence</a>
+        <a href="#career">Career</a>
+        <a href="#comparison">Industry Fit</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#reflection">Reflection</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">Red Team · Security Software Developer</div>
+          <h1>Nurul Ain Nadhirah</h1>
+          <p>Offensive security mindset fused with defensive development. Every line of code hardened against real-world threats. CCNA-certified, forensic analyst, and web penetration tester ready to protect critical infrastructure.</p>
+          <div class="btn-group">
+            <a href="#comparison" class="btn">Industry alignment</a>
+            <a href="#reflection" class="btn btn-outline">Personal reflection</a>
+          </div>
         </div>
-        <div class="nav-links">
-          <a href="#skills">Skills</a>
-          <a href="#certifications">Credentials</a>
-          <a href="#evidence">Evidence</a>
-          <a href="#strengths">Profile</a>
+        <div class="hero-image">
+          <img src="nad.jpeg" alt="Nurul profile" />
         </div>
       </div>
-    </nav>
+    </section>
 
-    <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <div class="hero-badge">Security-Focused Software Developer</div>
-            <h1>Nurul Ain Nadhirah</h1>
-            <p>
-              Applying offensive security mindset to defensive development.
-              Every line of code is hardened against real-world attackers.
-              Committed to proactive security, ethical hacking, and resilient
-              infrastructure.
-            </p>
-            <div class="btn-group">
-              <a href="#skills" class="btn">Explore capabilities</a>
-              <a href="#strengths" class="btn btn-outline">Core values</a>
-            </div>
-          </div>
-          <div class="hero-image">
-            <img
-              src="nad.jpeg"
-              alt="Professional security logo"
-              onerror="
-                this.onerror = null;
-                this.src =
-                  'https://placehold.co/200x200/eef2f8/1e5f74?text=RED+TEAM';
-              "
-            />
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
-        <div class="container">
-          <h2>Core Competencies</h2>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <div class="skill-title">Technical Arsenal</div>
-              <p>
-                <strong>Offensive and defensive fusion:</strong> Every
-                implementation is reviewed for security gaps.
-              </p>
-              <ul class="skill-list">
-                <li>Programming (Python, C)</li>
-                <li>Networking Basics</li>
-                <li>Digital Forensics</li>
-                <li>Penetration Testing</li>
-                <li>WebApp Pentesting</li>
-                <li>Exploit Development</li>
-              </ul>
-              <div class="tool-strip">
-                <span class="chip">Wireshark</span>
-                <span class="chip">Linux</span>
-                <span class="chip">Python</span>
-                <span class="chip">Autopsy</span>
-                <span class="chip">Burp Suite</span>
-                <span class="chip">HexEdit</span>
-                <span class="chip">WebGoat</span>
-              </div>
-            </div>
-            <div class="skill-card">
-              <div class="skill-title">Specialized Domains</div>
-              <ul class="skill-list">
-                <li>Forensics and Memory Analysis</li>
-                <li>Exploiting and Vulnerability Research</li>
-                <li>Web Application Pentesting</li>
-                <li>Red Team Operations</li>
-                <li>Secure Coding Guidelines</li>
-              </ul>
-              <p style="margin-top: 1rem; font-size: 0.9rem">
-                Applying security-in-depth from design to deployment, mitigating
-                OWASP Top 10 and CVE risks.
-              </p>
-            </div>
-            <div class="skill-card">
-              <div class="skill-title">Soft Skills and Values</div>
-              <ul class="skill-list">
-                <li>Teamwork</li>
-                <li>Responsible</li>
-                <li>Trustworthy</li>
-                <li>Independent</li>
-                <li>Critical Thinking</li>
-                <li>Problem Solving</li>
-              </ul>
-              <p style="margin-top: 0.8rem; font-size: 0.9rem">
-                Balancing collaboration with deep individual analysis to deliver
-                robust security outcomes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="certifications" class="section">
-        <div class="container">
-          <h2>Credentials and Academic Background</h2>
-          <div class="credential-box">
-            <div class="cred-item">
-              <strong>Cisco Certified Network Associate (CCNA)</strong>
-              <span style="font-size: 0.85rem"
-                >Routing and Switching, Network Security Fundamentals</span
-              >
-            </div>
-            <div class="cred-item">
-              <strong>Bachelor of Computer Science</strong>
-              <span style="font-size: 0.85rem"
-                >Computer Network Security (Honours)</span
-              >
-              <div style="margin-top: 8px">
-                <span class="chip">Network Security</span
-                ><span class="chip">Cryptography basics</span>
-              </div>
-            </div>
-            <div class="cred-item">
-              <strong>Continuous Training</strong>
-              <span style="font-size: 0.85rem"
-                >WebGoat, TryHackMe Red Team, Forensic challenges</span
-              >
-            </div>
-          </div>
-          <div
-            style="
-              margin-top: 1.2rem;
-              background: #ffffff;
-              border-radius: 20px;
-              padding: 1rem 1.5rem;
-              border: 1px solid #eef2f8;
-            "
-          >
-            <p style="font-weight: 500">
-              Throughout my degree, I mastered tools and techniques including
-              <strong
-                >Wireshark, Linux, Python, Autopsy, Burp Suite, HexEdit, and
-                WebGoat</strong
-              >
-              — building a strong foundation in forensics, network analysis, and
-              offensive web security.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="evidence" class="section">
-        <div class="container">
-          <h2>Evidence of Learning</h2>
-          <div class="marquee-container">
-            <div class="marquee-track">
-              <img
-                src="nad2.jpeg"
-                alt="Evidence of learning certificate or lab 1"
-                onerror="
-                  this.onerror = null;
-                  this.src =
-                    'https://placehold.co/300x200/eef2f8/1a2c3e?text=Evidence+1';
-                "
-              />
-              <img
-                src="nad3.jpeg"
-                alt="Evidence of learning lab or project 2"
-                onerror="
-                  this.onerror = null;
-                  this.src =
-                    'https://placehold.co/300x200/eef2f8/1a2c3e?text=Evidence+2';
-                "
-              />
-              <img
-                src="nad2.jpeg"
-                alt="Duplicate for seamless loop"
-                onerror="
-                  this.onerror = null;
-                  this.src =
-                    'https://placehold.co/300x200/eef2f8/1a2c3e?text=Evidence+1';
-                "
-              />
-              <img
-                src="nad3.jpeg"
-                alt="Duplicate for seamless loop"
-                onerror="
-                  this.onerror = null;
-                  this.src =
-                    'https://placehold.co/300x200/eef2f8/1a2c3e?text=Evidence+2';
-                "
-              />
-            </div>
-          </div>
-          <p
-            style="
-              margin-top: 1rem;
-              font-size: 0.85rem;
-              text-align: center;
-              color: #2c5a6e;
-            "
-          >
-            Portfolio evidence includes practical security assessments, forensic
-            investigations, and web penetration testing reports.
-          </p>
-        </div>
-      </section>
-
-      <section id="strengths" class="section">
-        <div class="container">
-          <h2>Professional Approach and Self-Awareness</h2>
-          <div class="two-columns">
-            <div class="col">
-              <h4>Strengths</h4>
-              <ul
-                style="
-                  margin-left: 1.2rem;
-                  margin-top: 0.5rem;
-                  line-height: 1.6;
-                "
-              >
-                <li>
-                  Teamwork and collaborative problem solving in red team
-                  exercises
-                </li>
-                <li>
-                  Critical thinking under pressure identifying attack surfaces
-                </li>
-                <li>
-                  Systematic problem solving that bridges offensive findings
-                  into defensive code
-                </li>
-                <li>
-                  High sense of responsibility and amanah (integrity) in
-                  handling vulnerabilities
-                </li>
-              </ul>
-            </div>
-            <div class="col">
-              <h4>Growth Area</h4>
-              <p>
-                <strong
-                  >Introvert nature and preference for solo deep-dives:</strong
-                >
-                I naturally enjoy solving complex security puzzles independently
-                before sharing solutions with the team. This ensures thorough
-                analysis, but I actively balance it with transparent
-                communication and early-stage collaboration to enhance team
-                velocity.
-              </p>
-              <hr />
-              <p style="font-style: italic; margin-top: 0.5rem">
-                "Secure every line of code red team mindset embedded in
-                development lifecycle."
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" style="padding-top: 0">
-        <div class="container">
-          <div
-            style="
-              background: #ffffff;
-              border-radius: 24px;
-              padding: 2rem;
-              border-left: 6px solid #1e5f74;
-              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-            "
-          >
-            <h3 style="margin-bottom: 0.5rem">
-              Red Team Responsibility: Security in Every Line
-            </h3>
-            <p style="margin-bottom: 1rem">
-              As a Red Team software developer, I apply adversarial simulation
-              and ethical hacking principles to prevent exploits before they
-              happen. Every feature, script, and integration undergoes threat
-              modeling, input validation, and secure error handling. Proactively
-              identify weaknesses through web pentesting, forensics readiness,
-              and network hardening to protect assets from advanced persistent
-              threats.
-            </p>
-            <div
-              style="
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.6rem;
-                margin-top: 1rem;
-              "
-            >
-              <span class="chip">Secure SDLC</span>
-              <span class="chip">Threat Modeling</span>
-              <span class="chip">Exploit Mitigation</span>
-              <span class="chip">Code Hardening</span>
-              <span class="chip">Zero Trust Principles</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2>Technical Proficiency Highlights</h2>
-          <div
-            style="
-              display: grid;
-              grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-              gap: 1rem;
-            "
-          >
-            <div
-              style="
-                background: #fff;
-                border-radius: 20px;
-                padding: 1.2rem;
-                border: 1px solid #edf2f8;
-              "
-            >
-              <strong style="font-size: 1.2rem; color: #0b4f6c"
-                >Forensics</strong
-              >
-              <p style="margin-top: 0.5rem">
-                Memory analysis, disk imaging with Autopsy, hex inspection via
-                HexEdit, log correlation.
-              </p>
-            </div>
-            <div
-              style="
-                background: #fff;
-                border-radius: 20px;
-                padding: 1.2rem;
-                border: 1px solid #edf2f8;
-              "
-            >
-              <strong style="font-size: 1.2rem; color: #0b4f6c"
-                >Exploiting</strong
-              >
-              <p style="margin-top: 0.5rem">
-                Vulnerability chaining, custom exploit scripts (Python and
-                Bash), fuzzing, buffer overflow principles.
-              </p>
-            </div>
-            <div
-              style="
-                background: #fff;
-                border-radius: 20px;
-                padding: 1.2rem;
-                border: 1px solid #edf2f8;
-              "
-            >
-              <strong style="font-size: 1.2rem; color: #0b4f6c"
-                >Web Pentesting</strong
-              >
-              <p style="margin-top: 0.5rem">
-                Burp Suite, OWASP testing (SQLi, XSS, CSRF), WebGoat labs,
-                session management flaws.
-              </p>
-            </div>
-          </div>
-          <p
-            style="
-              margin-top: 1.5rem;
-              background: #f8fbfd;
-              padding: 1rem;
-              border-radius: 20px;
-              font-size: 0.9rem;
-            "
-          >
-            <strong>Security-first coding mindset:</strong> Every Python script,
-            web endpoint, or networking tool I develop undergoes strict input
-            sanitization, least privilege access, and secure communication
-            patterns.
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer>
+    <section id="skills" class="section">
       <div class="container">
-        <p>Nurul Ain Nadhirah &copy; 2026. All rights reserved.</p>
+        <h2>Personal Skills & Competencies</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-title">Technical Arsenal</div>
+            <ul class="skill-list">
+              <li>Python / C</li>
+              <li>Networking (CCNA)</li>
+              <li>Digital Forensics</li>
+              <li>Penetration Testing</li>
+              <li>WebApp Pentesting</li>
+              <li>Exploit Dev</li>
+            </ul>
+            <div class="tool-strip" style="margin-top: 1rem;">
+              <span class="chip">Wireshark</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Burp Suite</span>
+              <span class="chip">Autopsy</span>
+              <span class="chip">HexEdit</span>
+              <span class="chip">WebGoat</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-title">Specialized Domains</div>
+            <ul class="skill-list">
+              <li>Memory Forensics</li>
+              <li>Vulnerability Research</li>
+              <li>Red Team Ops</li>
+              <li>Secure Coding</li>
+              <li>Threat Modeling</li>
+            </ul>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">OWASP Top 10 mitigation, CVE risk assessment, and adversarial simulation.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-title">Soft Skills & Values</div>
+            <ul class="skill-list">
+              <li>Teamwork</li>
+              <li>Responsible</li>
+              <li>Trustworthy</li>
+              <li>Analytical</li>
+              <li>Problem Solving</li>
+            </ul>
+            <p style="margin-top: 0.8rem; font-size: 0.9rem;">Balancing introspective deep-dives with transparent collaboration.</p>
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2>Certificates & Academic Background</h2>
+        <div class="credential-box">
+          <div class="cred-item">
+            <strong>Bachelor of Computer Science (Hons)</strong>
+            <span style="font-size: 0.85rem;">Computer Network Security</span>
+          </div>
+          <div class="cred-item">
+            <strong>CCNA (Cisco Certified Network Associate)</strong>
+            <span style="font-size: 0.85rem;">Routing & Switching, Network Security Fundamentals</span>
+          </div>
+          <div class="cred-item">
+            <strong>Computer Networking Course</strong>
+            <span style="font-size: 0.85rem;">Forziq Smartnetwork Bootcamp</span>
+          </div>
+          <div class="cred-item">
+            <strong>Continuous Training</strong>
+            <span style="font-size: 0.85rem;">TryHackMe Red Team, WebGoat, Forensic CTFs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="evidence" class="section">
+      <div class="container">
+        <h2>Evidence of Learning</h2>
+        <div class="marquee-container">
+          <div class="marquee-track">
+            <img src="nad2.jpeg" alt="forensics analysis" />
+            <img src="nad3.jpeg" alt="network analysis" />
+            <img src="nad5.png" alt="web pentest" />
+            <img src="nad6.png" alt="exploit code" />
+            <img src="nad8.png" alt="wireshark capture" />
+            <img src="nad9.png" alt="burp suite" />
+            <img src="nad10.png" alt="memory forensics" />
+            <img src="nad11.jpg" alt="autopsy report" />
+            <img src="nad 12.png" alt="linux hardening" />
+            <img src="nad7.JPG" alt="red team lab" />
+            <img src="nad13.png" alt="webgoat solution" />
+          </div>
+        </div>
+        <p style="margin-top: 1.2rem; text-align: center; font-size: 0.85rem; color: #2a607a;">Portfolio evidence: Web penetration testing, network topology, SQLi, cloud computing, forensic handling, network traffic analysis, real digital forensic case solve (Johor government agency) and adversary simulation labs.</p>
+      </div>
+    </section>
+    <section id="career" class="section">
+      <div class="container">
+        <h2>Career Exploration: Security Software Developer (Red Team-Oriented)</h2>
+        <div class="career-card">
+          <p style="font-size: 1rem; margin-bottom: 1.5rem;">I aspire to become a <strong>Security Software Developer with a Red Team mindset</strong>. This role combines secure software development with offensive security techniques to identify vulnerabilities and build resilient systems against cyber threats.</p>
+          <div class="career-grid">
+            <div class="career-subsection">
+              <h4>Job Responsibilities</h4>
+              <ul>
+                <li>Develop secure applications and security tools.</li>
+                <li>Perform vulnerability assessments and code reviews.</li>
+                <li>Conduct web penetration testing and threat modeling.</li>
+                <li>Implement secure coding practices to reduce security risks.</li>
+                <li>Collaborate with security teams to improve system defenses.</li>
+              </ul>
+            </div>
+            <div class="career-subsection">
+              <h4>Required Skills</h4>
+              <ul>
+                <li>Programming and secure coding knowledge.</li>
+                <li>Networking fundamentals and basic cybersecurity concepts.</li>
+                <li>Understanding of web application security.</li>
+                <li>Analytical and problem-solving skills.</li>
+                <li>Communication and teamwork abilities.</li>
+              </ul>
+            </div>
+            <div class="career-subsection">
+              <h4>Relevance to Modern Cybersecurity</h4>
+              <p>Security Software Developers play an important role in protecting applications and digital infrastructure from evolving cyber threats. By understanding both development and attacker techniques, they help organizations reduce vulnerabilities and build more resilient systems. This role is increasingly important in areas such as cloud services, financial technology, and critical infrastructure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="section">
+      <div class="container">
+        <h2>Current Skills vs. Industry Requirements</h2>
+        <div class="comparison-table">
+          <div class="comparison-row">
+            <div class="comp-cat">Network Defense</div>
+            <div class="comp-current"><strong>Current:</strong> CCNA (routing/switching), Wireshark, network forensics, ACL analysis</div>
+            <div class="comp-industry"><strong>Industry need:</strong> Zero-trust segmentation, perimeter monitoring, IDS/IPS tuning.</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-cat">Offensive Security</div>
+            <div class="comp-current"><strong>Current:</strong> Burp Suite, WebGoat, custom exploit scripts (Python), fuzzing basics</div>
+            <div class="comp-industry"><strong>Industry need:</strong> Web app pentesting, red team simulation, OWASP validation.</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-cat">Forensics & IR</div>
+            <div class="comp-current"><strong>Current:</strong> Autopsy, HexEdit, memory analysis, log correlation</div>
+            <div class="comp-industry"><strong>Industry need:</strong> Incident response, evidence collection, root cause analysis.</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-cat">Secure Development</div>
+            <div class="comp-current"><strong>Current:</strong> Input sanitization, least privilege, secure error handling (Python/C)</div>
+            <div class="comp-industry"><strong>Industry need:</strong> DevSecOps, SAST/DAST integration, threat modeling.</div>
+          </div>
+          <div class="comparison-row">
+            <div class="comp-cat">Soft Power</div>
+            <div class="comp-current"><strong>Current:</strong> Accountability, independent research, collaborative red team drills</div>
+            <div class="comp-industry"><strong>Industry need:</strong> Responsible disclosure, team synergy, high-pressure incident communication.</div>
+          </div>
+        </div>
+        <p style="margin-top: 1.5rem; background: #eef5fa; padding: 1rem 1.4rem; border-radius: 24px; font-size: 0.9rem;"><strong>Gap analysis:</strong> My skills directly match mid-level security engineering & red team requirements in data centers. Continuous improvement in cloud security (AWS/Azure) will be next milestone, but core network/web/forensics are production-ready.</p>
+      </div>
+    </section>
+    <section id="roadmap" class="section">
+      <div class="container">
+        <h2>5-Year Career Roadmap: Security Evolution</h2>
+        <div class="roadmap-grid">
+          <div class="roadmap-phase">
+            <div class="roadmap-header short-header">Short-term (Foundation & Specialization)</div>
+            <div class="roadmap-body">
+              <div class="roadmap-item">
+                <div class="roadmap-year">Year 1</div>
+                <div class="roadmap-desc">Earn OSCP certification, master Active Directory attacks and advanced evasion. Contribute to internal red team exercises at DayOne NTP. Build custom C2 prototype and automate network hardening scripts.</div>
+              </div>
+              <div class="roadmap-item">
+                <div class="roadmap-year">Year 2</div>
+                <div class="roadmap-desc">Achieve cloud security (AWS Certified Security – Specialty) and deep dive into container forensics for Docker and Kubernetes. Lead at least 2 red team workshops. Strengthen memory forensics and malware analysis.</div>
+              </div>
+            </div>
+          </div>
+          <div class="roadmap-phase">
+            <div class="roadmap-header long-header">Long-term (Leadership & Strategic Impact)</div>
+            <div class="roadmap-body">
+              <div class="roadmap-item">
+                <div class="roadmap-year">Year 3</div>
+                <div class="roadmap-desc">Attain advanced threat hunting certification. Move into senior security engineer role, mentor junior analysts. Develop integrated detection rules using Sigma and Suricata based on real red team findings.</div>
+              </div>
+              <div class="roadmap-item">
+                <div class="roadmap-year">Year 4</div>
+                <div class="roadmap-desc">Complete OSEP (Evasion & Penetration) or CISSP. Shift toward offensive research and threat intelligence. Automate risk-based validation for data center infrastructure. Present at regional security conferences.</div>
+              </div>
+              <div class="roadmap-item">
+                <div class="roadmap-year">Year 5</div>
+                <div class="roadmap-desc">Lead red team architect role. Drive adversarial emulation roadmap for DayOne. Influence security culture across engineering units. Act as incident commander for major cyber drills.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 1.5rem; background: #eef5fa; padding: 1rem 1.4rem; border-radius: 24px; font-size: 0.9rem;"><strong>Commitment:</strong> Each milestone aligns with data center threat landscape, from red team foundations to strategic defense leadership. Continuous feedback loops and CTF participation will accelerate every phase.</p>
+      </div>
+    </section>
+    <section id="reflection" class="section">
+      <div class="container">
+        <h2>Personal Reflection</h2>
+        <div class="reflection-wrapper">
+          <div class="reflection-tabs">
+            <button class="reflection-tab active" data-tab="journey">Journey</button>
+            <button class="reflection-tab" data-tab="whydayone">Dream Company</button>
+            <button class="reflection-tab" data-tab="value">Value & Skills</button>
+            <button class="reflection-tab" data-tab="strength">Strengths & Growth</button>
+            <button class="reflection-tab" data-tab="hire">Why Hire Me</button>
+            <button class="reflection-tab" data-tab="responsibility">Red Team Responsibility</button>
+          </div>
+          <div class="reflection-panes">
+            <div class="reflection-pane active-pane" id="pane-journey">
+              <div class="journey-card">
+                <h3 style="margin-top: 0; color: #1a6c89;">Journey as a Security-First Developer</h3>
+                <p>Throughout my degree and hands-on labs, I realized that cybersecurity is not just about fixing vulnerabilities but about understanding how systems can be broken and rebuilt more securely. My journey started with networking fundamentals (CCNA), then expanded into web penetration testing and digital forensics. This combination shaped my mindset to think like an attacker while still building and maintaining secure systems. I aim to grow into a Red Team-oriented security professional who can bridge offensive insights with defensive improvements.</p>
+              </div>
+              <div class="quote-block">
+                "Secure systems are not built by chance, they are built by those who understand how they break."
+              </div>
+            </div>
+            <div class="reflection-pane" id="pane-whydayone">
+              <div class="journey-card">
+                <h3 style="margin-top: 0; color: #1a6c89;">Dream Company: DayOne NTP Data Center</h3>
+                <p>I am particularly interested in contributing to DayOne NTP Data Center because it focuses on critical infrastructure that requires strong cybersecurity protection, where effective security practices are essential to ensure system reliability and defense against evolving cyber threats. Working in such an environment allows me to apply my skills in networking, digital forensics, and penetration testing to real-world systems that are highly important and sensitive.</p>
+                <div style="background: #eef4fa; border-radius: 20px; padding: 1rem; margin-top: 1rem;">
+                  <p style="margin: 0;"><strong>Critical Infrastructure Focus</strong>: Protecting Johor Bahru's digital backbone aligns with my passion for high-impact security work.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reflection-pane" id="pane-value">
+              <div class="value-card">
+                <h3 style="margin-top: 0; color: #1a6c89;">What Value I Can Bring</h3>
+                <ul style="margin-left: 1.5rem; line-height: 1.8;">
+                  <li>Ability to identify vulnerabilities through offensive security thinking</li>
+                  <li>Strong foundation in networking (CCNA) for infrastructure understanding</li>
+                  <li>Experience in digital forensics for incident investigation and analysis</li>
+                  <li>Hands-on exposure to web penetration testing tools and labs</li>
+                  <li>Commitment to producing clear documentation and actionable findings</li>
+                  <li>Continuous learning mindset to adapt to evolving threats</li>
+                </ul>
+                <h3 style="margin-top: 1.5rem; color: #1a6c89;">Skills That Make Me Suitable</h3>
+                <div class="two-col-grid">
+                  <div>
+                    <strong>Technical Skills</strong>
+                    <div class="skill-badge-group" style="margin-top: 0.5rem;">
+                      <span class="skill-badge">Network Security</span>
+                      <span class="skill-badge">CCNA</span>
+                      <span class="skill-badge">Web Penetration Testing</span>
+                      <span class="skill-badge">Digital Forensics</span>
+                      <span class="skill-badge">Wireshark</span>
+                      <span class="skill-badge">Burp Suite</span>
+                      <span class="skill-badge">Autopsy</span>
+                      <span class="skill-badge">Python/C</span>
+                    </div>
+                  </div>
+                  <div>
+                    <strong>Soft Skills</strong>
+                    <div class="skill-badge-group" style="margin-top: 0.5rem;">
+                      <span class="skill-badge">Analytical Thinking</span>
+                      <span class="skill-badge">Problem-solving</span>
+                      <span class="skill-badge">Responsibility</span>
+                      <span class="skill-badge">Integrity</span>
+                      <span class="skill-badge">Team Collaboration</span>
+                      <span class="skill-badge">Adaptability</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reflection-pane" id="pane-strength">
+              <div class="strength-card">
+                <h3 style="margin-top: 0; color: #1a6c89;">Strengths and Weaknesses</h3>
+                <div class="two-col-grid">
+                  <div>
+                    <strong>Strengths</strong>
+                    <div class="strength-item">Strong attention to detail in forensic and security analysis</div>
+                    <div class="strength-item">Systematic problem-solving approach</div>
+                    <div class="strength-item">High integrity when handling sensitive findings</div>
+                    <div class="strength-item">Able to work independently and in team environments</div>
+                  </div>
+                  <div>
+                    <strong>Weakness</strong>
+                    <div class="weakness-item">I tend to validate findings independently for too long before sharing them</div>
+                    <strong style="display: block; margin-top: 1rem;">Improvement Plan</strong>
+                    <div class="weakness-item">I am actively improving this by communicating preliminary findings earlier during tasks to improve team response time and collaboration.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="reflection-pane" id="pane-hire">
+              <div class="hire-card">
+                <h3 style="margin-top: 0; color: #1a6c89;">Why DayOne Nusajaya Tech Park Should Hire Me</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1.5rem;">
+                  <div style="background: white; border-radius: 28px; padding: 1.4rem; border:1px solid #e9f0f6;">
+                    <strong style="color:#0f5775;">Value Proposition</strong>
+                    <p style="margin-top: 0.5rem;">Combine CCNA level networking, web pentesting and forensics exactly what modern data centers need for proactive defense.</p>
+                  </div>
+                  <div style="background: white; border-radius: 28px; padding: 1.4rem; border:1px solid #e9f0f6;">
+                    <strong style="color:#0f5775;">Practical Evidence</strong>
+                    <p style="margin-top: 0.5rem;">Hands on labs from memory forensics to Burp Suite attacks, proven by portfolio screenshots and red team simulations.</p>
+                  </div>
+                  <div style="background: white; border-radius: 28px; padding: 1.4rem; border:1px solid #e9f0f6;">
+                    <strong style="color:#0f5775;">Mindset Fit</strong>
+                    <p style="margin-top: 0.5rem;">Secure by design thinking with integrity-first approach critical for Johor Bahru's strategic data center.</p>
+                  </div>
+                </div>
+                <div style="margin-top: 2rem; background:#F0F7FC; border-radius: 28px; padding: 1.5rem; text-align: center;">
+                  <p style="font-weight: 500;"> I turn offensive insights into defensive resilience. </p> For DayOne NTP, I will be the developer who finds the flaw before the adversary does.</p>
+                </div>
+              </div>
+            </div>
+            <div class="reflection-pane" id="pane-responsibility">
+              <div class="hire-card">
+                <h3 style="margin-top: 0; color: #1a6c89;">Red Team Responsibility – DayOne Readiness</h3>
+                <p>Applying adversarial simulation, secure SDLC, and zero-trust principles to data center operations. Every script, network ACL, and web dashboard is viewed through an attacker's lens reducing blast radius and enforcing defense-in-depth. For DayOne NTP, I am ready to contribute to red-blue exercises, forensic readiness, and secure infrastructure automation.</p>
+                <div style="margin-top: 1rem;">
+                  <span class="chip">Threat modeling</span>
+                  <span class="chip">Secure SDLC</span>
+                  <span class="chip">Exploit mitigation</span>
+                  <span class="chip">Network hardening</span>
+                  <span class="chip">Incident response</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Nurul Ain Nadhirah &copy; 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.reflection-tab');
+      const panes = document.querySelectorAll('.reflection-pane');
+      
+      function switchTab(tabId) {
+        tabs.forEach(tab => tab.classList.remove('active'));
+        panes.forEach(pane => pane.classList.remove('active-pane'));
+        
+        const selectedTab = document.querySelector(`.reflection-tab[data-tab="${tabId}"]`);
+        if (selectedTab) selectedTab.classList.add('active');
+        
+        const selectedPane = document.getElementById(`pane-${tabId}`);
+        if (selectedPane) selectedPane.classList.add('active-pane');
+      }
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          const tabId = this.getAttribute('data-tab');
+          switchTab(tabId);
+        });
+      });
+    });
+  </script>
+</body>
 </html>
