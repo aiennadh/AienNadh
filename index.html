@@ -1,1012 +1,2409 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="description" content="Professional portfolio of Nurul Ain Nadhirah — security-focused software developer, Red Team specialist, and forensic analyst. Showcasing technical skills, certifications, and industry-ready competencies." />
-  <title>Nurul Ain Nadhirah · Red Team Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: "Inter", sans-serif;
-      background-color: #fef8f5;
-      color: #2c1a12;
-      line-height: 1.5;
-      scroll-behavior: smooth;
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    h1, h2, h3 {
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      line-height: 1.2;
-      margin-bottom: 0.75rem;
-      background: linear-gradient(135deg, #9b2c1d 0%, #c23b22 100%);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
-
-    h2 {
-      font-size: 1.9rem;
-      margin-bottom: 1.8rem;
-      border-left: 6px solid #b53b28;
-      padding-left: 1.2rem;
-      font-weight: 600;
-      color: #7a2a1a;
-    }
-
-    h3 {
-      font-size: 1.35rem;
-      margin-bottom: 0.9rem;
-      color: #aa3a25;
-      font-weight: 600;
-    }
-
-    .section {
-      padding: 4rem 0;
-      border-bottom: 1px solid #f2e1da;
-    }
-
-    .section:last-of-type {
-      border-bottom: none;
-    }
-
-    .navbar {
-      background: rgba(255, 251, 248, 0.98);
-      backdrop-filter: blur(4px);
-      box-shadow: 0 2px 12px rgba(120, 40, 20, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid #f0d8cf;
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-
-    .logo-area {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-
-    .logo-img {
-      width: 44px;
-      height: 44px;
-      object-fit: cover;
-      border-radius: 14px;
-      background: #fef0e9;
-      border: 1px solid #f0d0c2;
-    }
-
-    .logo-text {
-      font-weight: 800;
-      font-size: 1.25rem;
-      color: #7e2c1c;
-      letter-spacing: -0.3px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      font-weight: 500;
-      color: #9c3b28;
-      transition: all 0.2s;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover {
-      color: #c0412a;
-      border-bottom: 2px solid #c0412a;
-      padding-bottom: 0.2rem;
-    }
-
-    .hero {
-      background: linear-gradient(125deg, #fffaf7 0%, #fff2ec 100%);
-      padding: 4rem 0;
-    }
-
-    .hero-grid {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 2.5rem;
-      justify-content: space-between;
-    }
-
-    .hero-content {
-      flex: 2;
-      min-width: 260px;
-    }
-
-    .hero-badge {
-      background: #fce6de;
-      display: inline-block;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: #ab3c26;
-      margin-bottom: 1.2rem;
-    }
-
-    .hero-content p {
-      font-size: 1.1rem;
-      color: #5c3628;
-      margin: 1rem 0 1.5rem 0;
-      max-width: 620px;
-    }
-
-    .hero-image {
-      flex: 1;
-      text-align: center;
-      background: #ffffff;
-      border-radius: 32px;
-      padding: 1rem;
-      box-shadow: 0 20px 35px -12px rgba(130, 45, 25, 0.08);
-      border: 1px solid #f0d4c8;
-    }
-
-    .hero-image img {
-      max-width: 190px;
-      width: 100%;
-      border-radius: 24px;
-      object-fit: cover;
-    }
-
-    .btn {
-      display: inline-flex;
-      background: #b63f2a;
-      color: white;
-      padding: 0.75rem 1.8rem;
-      border-radius: 44px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: 0.2s;
-      border: none;
-      font-size: 0.9rem;
-    }
-
-    .btn-outline {
-      background: transparent;
-      border: 1.5px solid #b63f2a;
-      color: #b63f2a;
-      margin-left: 0.8rem;
-    }
-
-    .btn-outline:hover {
-      background: #fdede7;
-    }
-
-    .btn:hover {
-      background: #962f1d;
-      transform: translateY(-2px);
-    }
-
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-
-    .skill-card {
-      background: #ffffff;
-      border-radius: 28px;
-      padding: 1.8rem;
-      box-shadow: 0 5px 18px rgba(110, 40, 20, 0.02);
-      border: 1px solid #f0dbd2;
-      transition: 0.2s;
-    }
-
-    .skill-card:hover {
-      border-color: #e9c6b8;
-      box-shadow: 0 12px 24px -12px rgba(140, 55, 30, 0.1);
-    }
-
-    .skill-title {
-      font-weight: 800;
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-      color: #a03a26;
-      border-left: 4px solid #c9553e;
-      padding-left: 0.9rem;
-    }
-
-    .skill-list {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      margin-top: 1rem;
-    }
-
-    .skill-list li {
-      background: #fdeee8;
-      padding: 0.3rem 1rem;
-      border-radius: 40px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: #943e2b;
-    }
-
-    .chip {
-      background: #fdeee8;
-      padding: 0.25rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #943e2b;
-    }
-
-    .credential-box {
-      background: #ffffff;
-      border-radius: 28px;
-      padding: 1.8rem;
-      border: 1px solid #f0dbd2;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.8rem;
-      justify-content: space-between;
-    }
-
-    .cred-item {
-      flex: 1;
-      min-width: 180px;
-    }
-
-    .cred-item strong {
-      display: block;
-      font-size: 1rem;
-      margin-bottom: 0.4rem;
-      color: #b1412c;
-    }
-
-    .comparison-table {
-      background: white;
-      border-radius: 28px;
-      padding: 1.8rem;
-      border: 1px solid #f0dbd2;
-      margin-top: 1rem;
-    }
-
-    .comparison-row {
-      display: flex;
-      flex-wrap: wrap;
-      border-bottom: 1px solid #f0dfd6;
-      padding: 1rem 0;
-    }
-
-    .comparison-row:last-child {
-      border-bottom: none;
-    }
-
-    .comp-cat {
-      flex: 1.2;
-      font-weight: 700;
-      color: #a03a26;
-    }
-
-    .comp-current {
-      flex: 2;
-    }
-
-    .comp-industry {
-      flex: 2;
-      background: #fef6f2;
-      border-radius: 20px;
-      padding: 0.4rem 0.9rem;
-    }
-
-    .reflection-wrapper {
-      background: linear-gradient(135deg, #ffffff 0%, #fef6f2 100%);
-      border-radius: 32px;
-      border: 1px solid #f0dbd2;
-      overflow: hidden;
-      box-shadow: 0 10px 30px -12px rgba(130, 45, 20, 0.08);
-    }
-
-    .reflection-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      background: #faece5;
-      border-bottom: 1px solid #eed9cf;
-      gap: 0.25rem;
-      padding: 0.5rem 1rem 0 1rem;
-    }
-
-    .reflection-tab {
-      padding: 0.9rem 1.8rem;
-      font-weight: 600;
-      font-size: 0.9rem;
-      color: #8e3b28;
-      cursor: pointer;
-      border-radius: 20px 20px 0 0;
-      transition: all 0.2s ease;
-      background: transparent;
-      border: none;
-      font-family: inherit;
-    }
-
-    .reflection-tab:hover {
-      background: rgba(180, 60, 35, 0.1);
-      color: #a03a26;
-    }
-
-    .reflection-tab.active {
-      background: white;
-      color: #c0412a;
-      border-bottom: 3px solid #c0412a;
-    }
-
-    .reflection-panes {
-      padding: 2rem;
-    }
-
-    .reflection-pane {
-      display: none;
-      animation: fadeIn 0.3s ease;
-    }
-
-    .reflection-pane.active-pane {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .journey-card, .value-card, .strength-card, .hire-card {
-      background: #ffffff;
-      border-radius: 24px;
-      padding: 1.8rem;
-      border: 1px solid #f0dbd2;
-      margin-bottom: 1.5rem;
-    }
-
-    .quote-block {
-      background: linear-gradient(115deg, #fef1ea 0%, #fde8df 100%);
-      border-radius: 20px;
-      padding: 1.5rem;
-      text-align: center;
-      font-style: italic;
-      font-weight: 500;
-      color: #8e3b28;
-      border-left: 6px solid #c0412a;
-      margin-top: 1rem;
-    }
-
-    .skill-badge-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-
-    .skill-badge {
-      background: #fdeee8;
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: #943e2b;
-      transition: all 0.2s;
-    }
-
-    .skill-badge:hover {
-      background: #c0412a;
-      color: white;
-      transform: translateY(-2px);
-    }
-
-    .two-col-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-    }
-
-    @media (max-width: 680px) {
-      .two-col-grid { grid-template-columns: 1fr; }
-      .reflection-tab { padding: 0.6rem 1rem; font-size: 0.8rem; }
-      .reflection-panes { padding: 1.2rem; }
-    }
-
-    .marquee-container {
-      background: #ffffff;
-      border-radius: 28px;
-      padding: 1.2rem 0.5rem;
-      border: 1px solid #f0dbd2;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    .marquee-track {
-      display: inline-block;
-      animation: scrollMarquee 40s linear infinite;
-    }
-
-    .marquee-track img {
-      height: 190px;
-      width: auto;
-      object-fit: cover;
-      border-radius: 18px;
-      margin: 0 10px;
-      box-shadow: 0 6px 14px rgba(110, 40, 18, 0.05);
-      border: 1px solid #f0dbd2;
-      vertical-align: middle;
-    }
-
-    @keyframes scrollMarquee {
-      0% { transform: translateX(0%); }
-      100% { transform: translateX(-50%); }
-    }
-
-    .marquee-container:hover .marquee-track {
-      animation-play-state: paused;
-    }
-
-    .roadmap-grid {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      margin-top: 1rem;
-    }
-
-    .roadmap-phase {
-      background: white;
-      border-radius: 28px;
-      border: 1px solid #f0dbd2;
-      overflow: hidden;
-    }
-
-    .roadmap-header {
-      background: #faece5;
-      padding: 1rem 1.8rem;
-      font-weight: 800;
-      font-size: 1.2rem;
-      color: #a03a26;
-      border-bottom: 1px solid #f0dbd2;
-    }
-
-    .short-header {
-      background: #f9e2d7;
-      color: #8e3622;
-    }
-
-    .long-header {
-      background: #f7d9cd;
-      color: #8e3622;
-    }
-
-    .roadmap-body {
-      padding: 1.5rem 1.8rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      justify-content: space-between;
-    }
-
-    .roadmap-item {
-      flex: 1;
-      min-width: 180px;
-    }
-
-    .roadmap-year {
-      font-weight: 800;
-      font-size: 1.25rem;
-      color: #c0412a;
-      margin-bottom: 0.6rem;
-      display: inline-block;
-      border-bottom: 2px solid #ecc2b2;
-      padding-bottom: 0.2rem;
-    }
-
-    .roadmap-desc {
-      font-size: 0.9rem;
-      line-height: 1.45;
-      color: #5c3628;
-    }
-
-    .career-card {
-      background: #ffffff;
-      border-radius: 28px;
-      padding: 2rem;
-      border: 1px solid #f0dbd2;
-      margin-top: 1rem;
-      box-shadow: 0 5px 18px rgba(110, 40, 18, 0.02);
-    }
-
-    .career-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.8rem;
-      margin-top: 1rem;
-    }
-
-    .career-subsection {
-      background: #fefaf7;
-      border-radius: 24px;
-      padding: 1.2rem 1.4rem;
-      border-left: 4px solid #c0412a;
-    }
-
-    .career-subsection h4 {
-      font-size: 1.1rem;
-      margin-bottom: 0.75rem;
-      color: #a03a26;
-      font-weight: 700;
-    }
-
-    .career-subsection ul, .career-subsection p {
-      font-size: 0.9rem;
-      color: #5c3628;
-      line-height: 1.5;
-    }
-
-    .career-subsection ul {
-      margin-left: 1.2rem;
-    }
-
-    .career-subsection li {
-      margin: 0.4rem 0;
-    }
-
-    footer {
-      background: #faece5;
-      padding: 2rem 0;
-      text-align: center;
-      font-size: 0.85rem;
-      color: #8e3b28;
-      border-top: 1px solid #ecc2b2;
-    }
-
-    @media (max-width: 780px) {
-      .container { padding: 0 1.3rem; }
-      .nav-container { flex-direction: column; gap: 0.8rem; }
-      .nav-links { gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1.6rem; }
-      .hero-grid { flex-direction: column-reverse; text-align: center; }
-      .btn-group { justify-content: center; display: flex; flex-wrap: wrap; }
-      .btn-outline { margin-left: 0; margin-top: 0.6rem; }
-      .comparison-row { flex-direction: column; gap: 0.7rem; }
-      .marquee-track img { height: 130px; }
-      .roadmap-body { flex-direction: column; }
-    }
-
-    @media (max-width: 480px) {
-      .skills-grid { grid-template-columns: 1fr; }
-      .credential-box { flex-direction: column; }
-      .marquee-track img { height: 105px; }
-    }
-  </style>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo-area">
-        <img src="nad.jpeg" alt="Nurul Ain Nadhirah" class="logo-img" />
-        <span class="logo-text">Nurul Ain Nadhirah</span>
-      </div>
-      <div class="nav-links">
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certificates</a>
-        <a href="#evidence">Evidence</a>
-        <a href="#career">Career</a>
-        <a href="#comparison">Industry Fit</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#reflection">Reflection</a>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="hero-badge">Red Team · Security Software Developer</div>
-          <h1>Nurul Ain Nadhirah</h1>
-          <p>Offensive security mindset fused with defensive development. Every line of code hardened against real-world threats. CCNA-certified, forensic analyst, and web penetration tester ready to protect critical infrastructure.</p>
-          <div class="btn-group">
-            <a href="#comparison" class="btn">Industry alignment</a>
-            <a href="#reflection" class="btn btn-outline">Personal reflection</a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <img src="nad.jpeg" alt="Nurul profile" />
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <h2>Personal Skills & Competencies</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-title">Technical Arsenal</div>
-            <ul class="skill-list">
-              <li>Python / C</li>
-              <li>Networking (CCNA)</li>
-              <li>Digital Forensics</li>
-              <li>Penetration Testing</li>
-              <li>WebApp Pentesting</li>
-              <li>Exploit Dev</li>
-            </ul>
-            <div class="tool-strip" style="margin-top: 1rem;">
-              <span class="chip">Wireshark</span>
-              <span class="chip">Linux</span>
-              <span class="chip">Burp Suite</span>
-              <span class="chip">Autopsy</span>
-              <span class="chip">HexEdit</span>
-              <span class="chip">WebGoat</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-title">Specialized Domains</div>
-            <ul class="skill-list">
-              <li>Memory Forensics</li>
-              <li>Vulnerability Research</li>
-              <li>Red Team Ops</li>
-              <li>Secure Coding</li>
-              <li>Threat Modeling</li>
-            </ul>
-            <p style="margin-top: 1rem; font-size: 0.9rem;">OWASP Top 10 mitigation, CVE risk assessment, and adversarial simulation.</p>
-          </div>
-          <div class="skill-card">
-            <div class="skill-title">Soft Skills & Values</div>
-            <ul class="skill-list">
-              <li>Teamwork</li>
-              <li>Responsible</li>
-              <li>Trustworthy</li>
-              <li>Analytical</li>
-              <li>Problem Solving</li>
-            </ul>
-            <p style="margin-top: 0.8rem; font-size: 0.9rem;">Balancing introspective deep-dives with transparent collaboration.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications" class="section">
-      <div class="container">
-        <h2>Certificates & Academic Background</h2>
-        <div class="credential-box">
-          <div class="cred-item">
-            <strong>Bachelor of Computer Science (Hons)</strong>
-            <span style="font-size: 0.85rem;">Computer Network Security</span>
-          </div>
-          <div class="cred-item">
-            <strong>CCNA (Cisco Certified Network Associate)</strong>
-            <span style="font-size: 0.85rem;">Routing & Switching, Network Security Fundamentals</span>
-          </div>
-          <div class="cred-item">
-            <strong>Computer Networking Course</strong>
-            <span style="font-size: 0.85rem;">Forziq Smartnetwork Bootcamp</span>
-          </div>
-          <div class="cred-item">
-            <strong>Continuous Training</strong>
-            <span style="font-size: 0.85rem;">TryHackMe Red Team, WebGoat, Forensic CTFs</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="evidence" class="section">
-      <div class="container">
-        <h2>Evidence of Learning</h2>
-        <div class="marquee-container">
-          <div class="marquee-track">
-            <img src="nad2.jpeg" alt="forensics analysis" />
-            <img src="nad3.jpeg" alt="network analysis" />
-            <img src="nad5.png" alt="web pentest" />
-            <img src="nad6.png" alt="exploit code" />
-            <img src="nad8.png" alt="wireshark capture" />
-            <img src="nad9.png" alt="burp suite" />
-            <img src="nad10.png" alt="memory forensics" />
-            <img src="nad11.jpg" alt="autopsy report" />
-            <img src="nad 12.png" alt="linux hardening" />
-            <img src="nad7.JPG" alt="red team lab" />
-            <img src="nad13.png" alt="webgoat solution" />
-          </div>
-        </div>
-        <p style="margin-top: 1.2rem; text-align: center; font-size: 0.85rem; color: #5c3628;">Portfolio evidence: Web penetration testing, network topology, SQLi, cloud computing, forensic handling, network traffic analysis,<br> real cybersecurity case solving (Johor government agency) and practical  network security exercises.</p>
-      </div>
-    </section>
-    <section id="career" class="section">
-      <div class="container">
-        <h2>Career Exploration: Security Software Developer (Red Team-Oriented)</h2>
-        <div class="career-card">
-          <p style="font-size: 1rem; margin-bottom: 1.5rem;">I aspire to become a <strong>Security Software Developer with a Red Team mindset</strong>. This role combines secure software development with offensive security techniques to identify vulnerabilities and build resilient systems against cyber threats.</p>
-          <div class="career-grid">
-            <div class="career-subsection">
-              <h4>Job Responsibilities</h4>
-              <ul>
-                <li>Develop secure applications and security tools.</li>
-                <li>Perform vulnerability assessments and code reviews.</li>
-                <li>Conduct web penetration testing and threat modeling.</li>
-                <li>Implement secure coding practices to reduce security risks.</li>
-                <li>Collaborate with security teams to improve system defenses.</li>
-              </ul>
-            </div>
-            <div class="career-subsection">
-              <h4>Required Skills</h4>
-              <ul>
-                <li>Programming and secure coding knowledge.</li>
-                <li>Networking fundamentals and basic cybersecurity concepts.</li>
-                <li>Understanding of web application security.</li>
-                <li>Analytical and problem-solving skills.</li>
-                <li>Communication and teamwork abilities.</li>
-              </ul>
-            </div>
-            <div class="career-subsection">
-              <h4>Relevance to Modern Cybersecurity</h4>
-              <p>Security Software Developers play an important role in protecting applications and digital infrastructure from evolving cyber threats. By understanding both development and attacker techniques, they help organizations reduce vulnerabilities and build more resilient systems. This role is increasingly important in areas such as cloud services, financial technology, and critical infrastructure.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="comparison" class="section">
-      <div class="container">
-        <h2>Current Skills vs. Industry Requirements</h2>
-        <div class="comparison-table">
-          <div class="comparison-row">
-            <div class="comp-cat">Network Defense</div>
-            <div class="comp-current"><strong>Current:</strong> CCNA (routing/switching), Wireshark, network forensics, ACL analysis</div>
-            <div class="comp-industry"><strong>Industry need:</strong> Zero-trust segmentation, perimeter monitoring, IDS/IPS tuning.</div>
-          </div>
-          <div class="comparison-row">
-            <div class="comp-cat">Offensive Security</div>
-            <div class="comp-current"><strong>Current:</strong> Burp Suite, WebGoat, custom exploit scripts (Python), fuzzing basics</div>
-            <div class="comp-industry"><strong>Industry need:</strong> Web app pentesting, red team simulation, OWASP validation.</div>
-          </div>
-          <div class="comparison-row">
-            <div class="comp-cat">Forensics & IR</div>
-            <div class="comp-current"><strong>Current:</strong> Autopsy, HexEdit, memory analysis, log correlation</div>
-            <div class="comp-industry"><strong>Industry need:</strong> Incident response, evidence collection, root cause analysis.</div>
-          </div>
-          <div class="comparison-row">
-            <div class="comp-cat">Secure Development</div>
-            <div class="comp-current"><strong>Current:</strong> Input sanitization, least privilege, secure error handling (Python/C)</div>
-            <div class="comp-industry"><strong>Industry need:</strong> DevSecOps, SAST/DAST integration, threat modeling.</div>
-          </div>
-          <div class="comparison-row">
-            <div class="comp-cat">Soft Power</div>
-            <div class="comp-current"><strong>Current:</strong> Accountability, independent research, collaborative red team drills</div>
-            <div class="comp-industry"><strong>Industry need:</strong> Responsible disclosure, team synergy, high-pressure incident communication.</div>
-          </div>
-        </div>
-        <p style="margin-top: 1.5rem; background: #fef1ea; padding: 1rem 1.4rem; border-radius: 24px; font-size: 0.9rem;"><strong>Gap analysis:</strong> My skills directly match mid-level security engineering & red team requirements in data centers. Continuous improvement in cloud security (AWS/Azure) will be next milestone, but core network/web/forensics are production-ready.</p>
-      </div>
-    </section>
-    <section id="roadmap" class="section">
-      <div class="container">
-        <h2>5-Year Career Roadmap: Security Evolution</h2>
-        <div class="roadmap-grid">
-          <div class="roadmap-phase">
-            <div class="roadmap-header short-header">Short-term (Foundation & Specialization)</div>
-            <div class="roadmap-body">
-              <div class="roadmap-item">
-                <div class="roadmap-year">Year 1</div>
-                <div class="roadmap-desc">Earn OSCP certification, master Active Directory attacks and advanced evasion. Contribute to internal red team exercises at DayOne NTP. Build custom C2 prototype and automate network hardening scripts.</div>
-              </div>
-              <div class="roadmap-item">
-                <div class="roadmap-year">Year 2</div>
-                <div class="roadmap-desc">Achieve cloud security (AWS Certified Security:Specialty) and deep dive into container forensics for Docker and Kubernetes. Lead at least 2 red team workshops. Strengthen memory forensics and malware analysis.</div>
-              </div>
-            </div>
-          </div>
-          <div class="roadmap-phase">
-            <div class="roadmap-header long-header">Long-term (Leadership & Strategic Impact)</div>
-            <div class="roadmap-body">
-              <div class="roadmap-item">
-                <div class="roadmap-year">Year 3</div>
-                <div class="roadmap-desc">Attain advanced threat hunting certification. Move into senior security engineer role, mentor junior analysts. Develop integrated detection rules using Sigma and Suricata based on real red team findings.</div>
-              </div>
-              <div class="roadmap-item">
-                <div class="roadmap-year">Year 4</div>
-                <div class="roadmap-desc">Complete OSEP (Evasion & Penetration) or CISSP. Shift toward offensive research and threat intelligence. Automate risk-based validation for data center infrastructure. Present at regional security conferences.</div>
-              </div>
-              <div class="roadmap-item">
-                <div class="roadmap-year">Year 5</div>
-                <div class="roadmap-desc">Lead red team architect role. Drive adversarial emulation roadmap for DayOne. Influence security culture across engineering units. Act as incident commander for major cyber drills.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p style="margin-top: 1.5rem; background: #fef1ea; padding: 1rem 1.4rem; border-radius: 24px; font-size: 0.9rem;"><strong>Commitment:</strong> Each milestone aligns with data center threat landscape, from red team foundations to strategic defense leadership. Continuous feedback loops and CTF participation will accelerate every phase.</p>
-      </div>
-    </section>
-    <section id="reflection" class="section">
-      <div class="container">
-        <h2>Personal Reflection</h2>
-        <div class="reflection-wrapper">
-          <div class="reflection-tabs">
-            <button class="reflection-tab active" data-tab="journey">Journey</button>
-            <button class="reflection-tab" data-tab="whydayone">Dream Company</button>
-            <button class="reflection-tab" data-tab="value">Value & Skills</button>
-            <button class="reflection-tab" data-tab="strength">Strengths & Growth</button>
-            <button class="reflection-tab" data-tab="hire">Why Hire Me</button>
-            <button class="reflection-tab" data-tab="responsibility">Red Team Responsibility</button>
-          </div>
-          <div class="reflection-panes">
-            <div class="reflection-pane active-pane" id="pane-journey">
-              <div class="journey-card">
-                <h3 style="margin-top: 0; color: #c0412a;">Journey as a Security-First Developer</h3>
-                <p>Throughout my degree and hands-on labs, I realized that cybersecurity is not just about fixing vulnerabilities but about understanding how systems can be broken and rebuilt more securely. My journey started with networking fundamentals (CCNA), then expanded into web penetration testing and digital forensics. This combination shaped my mindset to think like an attacker while still building and maintaining secure systems. I aim to grow into a Red Team-oriented security professional who can bridge offensive insights with defensive improvements.</p>
-              </div>
-              <div class="quote-block">
-                "Secure systems are not built by chance, they are built by those who understand how they break."
-              </div>
-            </div>
-            <div class="reflection-pane" id="pane-whydayone">
-              <div class="journey-card">
-                <h3 style="margin-top: 0; color: #c0412a;">Dream Company: DayOne NTP Data Center</h3>
-                <p>I am particularly interested in contributing to DayOne NTP Data Center because it focuses on critical infrastructure that requires strong cybersecurity protection, where effective security practices are essential to ensure system reliability and defense against evolving cyber threats. Working in such an environment allows me to apply my skills in networking, digital forensics, and penetration testing to real-world systems that are highly important and sensitive.</p>
-                <div style="background: #fdeee8; border-radius: 20px; padding: 1rem; margin-top: 1rem;">
-                  <p style="margin: 0;"><strong>Critical Infrastructure Focus</strong>: Protecting Johor Bahru's digital backbone aligns with my passion for high-impact security work.</p>
-                </div>
-              </div>
-            </div>
-            <div class="reflection-pane" id="pane-value">
-              <div class="value-card">
-                <h3 style="margin-top: 0; color: #c0412a;">What Value I Can Bring</h3>
-                <ul style="margin-left: 1.5rem; line-height: 1.8;">
-                  <li>Ability to identify vulnerabilities through offensive security thinking</li>
-                  <li>Strong foundation in networking (CCNA) for infrastructure understanding</li>
-                  <li>Experience in digital forensics for incident investigation and analysis</li>
-                  <li>Hands-on exposure to web penetration testing tools and labs</li>
-                  <li>Commitment to producing clear documentation and actionable findings</li>
-                  <li>Continuous learning mindset to adapt to evolving threats</li>
-                </ul>
-                <h3 style="margin-top: 1.5rem; color: #c0412a;">Skills That Make Me Suitable</h3>
-                <div class="two-col-grid">
-                  <div>
-                    <strong>Technical Skills</strong>
-                    <div class="skill-badge-group" style="margin-top: 0.5rem;">
-                      <span class="skill-badge">Network Security</span>
-                      <span class="skill-badge">CCNA</span>
-                      <span class="skill-badge">Web Penetration Testing</span>
-                      <span class="skill-badge">Digital Forensics</span>
-                      <span class="skill-badge">Wireshark</span>
-                      <span class="skill-badge">Burp Suite</span>
-                      <span class="skill-badge">Autopsy</span>
-                      <span class="skill-badge">Python/C</span>
-                    </div>
-                  </div>
-                  <div>
-                    <strong>Soft Skills</strong>
-                    <div class="skill-badge-group" style="margin-top: 0.5rem;">
-                      <span class="skill-badge">Analytical Thinking</span>
-                      <span class="skill-badge">Problem-solving</span>
-                      <span class="skill-badge">Responsibility</span>
-                      <span class="skill-badge">Integrity</span>
-                      <span class="skill-badge">Team Collaboration</span>
-                      <span class="skill-badge">Adaptability</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="reflection-pane" id="pane-strength">
-              <div class="strength-card">
-                <h3 style="margin-top: 0; color: #c0412a;">Strengths and Weaknesses</h3>
-                <div class="two-col-grid">
-                  <div>
-                    <strong>Strengths</strong>
-                    <div class="strength-item">Strong attention to detail in forensic and security analysis</div>
-                    <div class="strength-item">Systematic problem-solving approach</div>
-                    <div class="strength-item">High integrity when handling sensitive findings</div>
-                    <div class="strength-item">Able to work independently and in team environments</div>
-                  </div>
-                  <div>
-                    <strong>Weakness</strong>
-                    <div class="weakness-item">I tend to validate findings independently for too long before sharing them</div>
-                    <strong style="display: block; margin-top: 1rem;">Improvement Plan</strong>
-                    <div class="weakness-item">I am actively improving this by communicating preliminary findings earlier during tasks to improve team response time and collaboration.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="reflection-pane" id="pane-hire">
-              <div class="hire-card">
-                <h3 style="margin-top: 0; color: #c0412a;">Why DayOne Nusajaya Tech Park Should Hire Me</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 1.5rem;">
-                  <div style="background: white; border-radius: 28px; padding: 1.4rem; border:1px solid #f0dbd2;">
-                    <strong style="color:#a03a26;">Value Proposition</strong>
-                    <p style="margin-top: 0.5rem;">Combine CCNA level networking, web pentesting and forensics exactly what modern data centers need for proactive defense.</p>
-                  </div>
-                  <div style="background: white; border-radius: 28px; padding: 1.4rem; border:1px solid #f0dbd2;">
-                    <strong style="color:#a03a26;">Practical Evidence</strong>
-                    <p style="margin-top: 0.5rem;">Hands on labs from memory forensics to Burp Suite attacks, proven by portfolio screenshots and red team simulations.</p>
-                  </div>
-                  <div style="background: white; border-radius: 28px; padding: 1.4rem; border:1px solid #f0dbd2;">
-                    <strong style="color:#a03a26;">Mindset Fit</strong>
-                    <p style="margin-top: 0.5rem;">Secure by design thinking with integrity-first approach critical for Johor Bahru's strategic data center.</p>
-                  </div>
-                </div>
-                <div style="margin-top: 2rem; background:#FEF1EA; border-radius: 28px; padding: 1.5rem; text-align: center;">
-                  <p style="font-weight: 500;"> I turn offensive insights into defensive resilience. </p> For DayOne NTP, I will be the developer who finds the flaw before the adversary does.</p>
-                </div>
-              </div>
-            </div>
-            <div class="reflection-pane" id="pane-responsibility">
-              <div class="hire-card">
-                <h3 style="margin-top: 0; color: #c0412a;">Red Team Responsibility – DayOne Readiness</h3>
-                <p>Applying adversarial simulation, secure SDLC, and zero-trust principles to data center operations. Every script, network ACL, and web dashboard is viewed through an attacker's lens reducing blast radius and enforcing defense-in-depth. For DayOne NTP, I am ready to contribute to red-blue exercises, forensic readiness, and secure infrastructure automation.</p>
-                <div style="margin-top: 1rem;">
-                  <span class="chip">Threat modeling</span>
-                  <span class="chip">Secure SDLC</span>
-                  <span class="chip">Exploit mitigation</span>
-                  <span class="chip">Network hardening</span>
-                  <span class="chip">Incident response</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>Nurul Ain Nadhirah &copy; 2026. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const tabs = document.querySelectorAll('.reflection-tab');
-      const panes = document.querySelectorAll('.reflection-pane');
-      
-      function switchTab(tabId) {
-        tabs.forEach(tab => tab.classList.remove('active'));
-        panes.forEach(pane => pane.classList.remove('active-pane'));
-        
-        const selectedTab = document.querySelector(`.reflection-tab[data-tab="${tabId}"]`);
-        if (selectedTab) selectedTab.classList.add('active');
-        
-        const selectedPane = document.getElementById(`pane-${tabId}`);
-        if (selectedPane) selectedPane.classList.add('active-pane');
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Professional portfolio of Nurul Ain Nadhirah — security-focused software developer, Red Team specialist, and forensic analyst."
+    />
+    <title>Nurul Ain Nadhirah · Red Team Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
-      
-      tabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-          const tabId = this.getAttribute('data-tab');
-          switchTab(tabId);
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        scroll-behavior: smooth;
+        transition:
+          background 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+          color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+      :root {
+        --bg: #f5f0ed;
+        --surface: #ffffff;
+        --surface2: #faf5f2;
+        --border: #e5dbd5;
+        --text: #1a100c;
+        --text2: #4d342a;
+        --primary: #b13e2a;
+        --primary-light: #d9b8ae;
+        --primary-soft: #f0dfd9;
+        --shadow: 0 8px 40px rgba(60, 20, 10, 0.06);
+        --radius: 28px;
+        --radius-sm: 18px;
+        --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+        --ios: cubic-bezier(0.42, 0, 0.58, 1);
+      }
+      .dark {
+        --bg: #12100e;
+        --surface: #1f1916;
+        --surface2: #2a221e;
+        --border: #3d322c;
+        --text: #f0e3dd;
+        --text2: #cbb7ad;
+        --primary: #d75f47;
+        --primary-light: #6f4237;
+        --primary-soft: #36241e;
+        --shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 10px;
+      }
+
+      #particles-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 1;
+      }
+      h1,
+      h2,
+      h3 {
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+      h1 {
+        font-size: 3.2rem;
+        line-height: 1.1;
+        margin-bottom: 0.75rem;
+        background: linear-gradient(135deg, #b13e2a 0%, #d75f47 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        border-left: 6px solid var(--primary);
+        padding-left: 1.2rem;
+        font-weight: 600;
+        color: var(--primary);
+      }
+      h3 {
+        font-size: 1.35rem;
+        margin-bottom: 0.9rem;
+        color: var(--primary);
+        font-weight: 600;
+      }
+      .section {
+        padding: 5rem 0;
+        border-bottom: 1px solid var(--border);
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+        transition: all 0.8s var(--spring);
+        will-change: transform, opacity;
+      }
+      .section.visible {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+      .section:last-of-type {
+        border-bottom: none;
+      }
+
+      .navbar {
+        background: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 1px solid transparent;
+        transition: all 0.4s var(--ios);
+      }
+      .dark .navbar {
+        background: rgba(18, 16, 14, 0.82);
+      }
+      .navbar.scrolled {
+        box-shadow:
+          0 1px 0 rgba(0, 0, 0, 0.06),
+          0 8px 30px rgba(0, 0, 0, 0.04);
+      }
+      .dark .navbar.scrolled {
+        box-shadow:
+          0 1px 0 rgba(255, 255, 255, 0.04),
+          0 8px 30px rgba(0, 0, 0, 0.3);
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem 2rem;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .logo-img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 12px;
+        background: var(--primary-soft);
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--spring);
+      }
+      .logo-img:hover {
+        transform: rotate(-8deg) scale(1.05);
+      }
+      .logo-text {
+        font-weight: 800;
+        font-size: 1.1rem;
+        color: var(--primary);
+      }
+      .nav-links {
+        display: flex;
+        gap: 1.8rem;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .nav-links a {
+        text-decoration: none;
+        font-weight: 500;
+        color: var(--text2);
+        transition: all 0.3s var(--ios);
+        font-size: 0.85rem;
+        position: relative;
+        padding: 0.2rem 0;
+      }
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: var(--primary);
+        transition: all 0.4s var(--spring);
+        transform: translateX(-50%);
+        border-radius: 2px;
+      }
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+      .theme-toggle {
+        background: var(--surface2);
+        border: 1px solid var(--border);
+        border-radius: 40px;
+        padding: 0.35rem 0.9rem;
+        font-size: 0.95rem;
+        cursor: pointer;
+        color: var(--text2);
+        transition: all 0.4s var(--spring);
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .theme-toggle::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: var(--primary-soft);
+        border-radius: 40px;
+        transform: scale(0);
+        transition: transform 0.4s var(--spring);
+      }
+      .theme-toggle:hover::before {
+        transform: scale(1);
+      }
+      .theme-toggle:hover {
+        color: var(--primary);
+        transform: scale(1.04);
+      }
+      .theme-toggle i,
+      .theme-toggle span {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero {
+        background: var(--surface2);
+        padding: 5rem 0;
+        border-bottom: 1px solid var(--border);
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: -40%;
+        right: -15%;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(
+          circle,
+          var(--primary-soft) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        opacity: 0.5;
+        animation: heroGlow 8s ease-in-out infinite alternate;
+      }
+      @keyframes heroGlow {
+        0% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0.4;
+        }
+        100% {
+          transform: translate(-40px, 30px) scale(1.1);
+          opacity: 0.6;
+        }
+      }
+      .hero-grid {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 3rem;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+      }
+      .hero-content {
+        flex: 2;
+        min-width: 260px;
+      }
+      .hero-badge {
+        background: var(--primary-soft);
+        display: inline-block;
+        padding: 0.3rem 1.4rem;
+        border-radius: 40px;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1.2rem;
+        animation: badgePulse 3s ease-in-out infinite;
+        backdrop-filter: blur(4px);
+        border: 1px solid var(--border);
+      }
+      @keyframes badgePulse {
+        0%,
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(177, 62, 42, 0);
+        }
+        50% {
+          transform: scale(1.02);
+          box-shadow: 0 0 20px rgba(177, 62, 42, 0.1);
+        }
+      }
+      .hero-content p {
+        font-size: 1.15rem;
+        color: var(--text2);
+        margin: 1rem 0 1.8rem;
+        max-width: 620px;
+        min-height: 3.5rem;
+      }
+      .hero-content p .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 1.2rem;
+        background: var(--primary);
+        margin-left: 2px;
+        animation: blink 0.7s infinite;
+        vertical-align: text-bottom;
+      }
+      @keyframes blink {
+        0%,
+        50% {
+          opacity: 1;
+        }
+        51%,
+        100% {
+          opacity: 0;
+        }
+      }
+      .hero-image {
+        flex: 1;
+        text-align: center;
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 1rem;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        transition: all 0.5s var(--spring);
+        animation: float 5s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+      .hero-image:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 20px 60px rgba(177, 62, 42, 0.12);
+        animation-play-state: paused;
+      }
+      .hero-image img {
+        max-width: 200px;
+        width: 100%;
+        border-radius: 24px;
+        object-fit: cover;
+        transition: all 0.5s var(--spring);
+      }
+      .hero-image img:hover {
+        transform: scale(1.03);
+      }
+      .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        align-items: center;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--primary);
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 44px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.4s var(--spring);
+        border: none;
+        font-size: 0.9rem;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.15),
+          transparent
+        );
+        opacity: 0;
+        transition: opacity 0.4s var(--ios);
+      }
+      .btn:hover::after {
+        opacity: 1;
+      }
+      .btn-outline {
+        background: transparent;
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+      }
+      .btn-outline:hover {
+        background: var(--primary-soft);
+        transform: translateY(-2px) scale(1.02);
+      }
+      .btn:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 12px 35px rgba(177, 62, 42, 0.25);
+      }
+      .btn:active {
+        transform: scale(0.96);
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.8rem;
+      }
+      .skill-card {
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 2rem;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        transition: all 0.5s var(--spring);
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+      }
+      .skill-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--primary),
+          var(--primary-light)
+        );
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.6s var(--spring);
+      }
+      .skill-card:hover::before {
+        transform: scaleX(1);
+      }
+      .skill-card-inner {
+        transform-style: preserve-3d;
+        transition: all 0.3s var(--ios);
+      }
+      .skill-title {
+        font-weight: 800;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: var(--primary);
+        border-left: 4px solid var(--primary);
+        padding-left: 0.9rem;
+      }
+      .skill-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+        margin-top: 1rem;
+      }
+      .skill-list li {
+        background: var(--primary-soft);
+        padding: 0.3rem 1.2rem;
+        border-radius: 40px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--primary);
+        transition: all 0.3s var(--spring);
+      }
+      .skill-list li:hover {
+        transform: scale(1.06) translateY(-2px);
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 4px 15px rgba(177, 62, 42, 0.2);
+      }
+      .chip {
+        background: var(--primary-soft);
+        padding: 0.25rem 1.2rem;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: var(--primary);
+        display: inline-block;
+        margin: 0.2rem;
+        transition: all 0.3s var(--spring);
+        cursor: default;
+      }
+      .chip:hover {
+        transform: scale(1.06) translateY(-2px);
+        background: var(--primary);
+        color: white;
+        box-shadow: 0 4px 15px rgba(177, 62, 42, 0.15);
+      }
+
+      .skill-progress-item {
+        margin: 1rem 0;
+      }
+      .skill-progress-item .label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+      }
+      .skill-progress-item .label .value {
+        color: var(--primary);
+        font-weight: 700;
+      }
+      .progress-bar {
+        width: 100%;
+        height: 8px;
+        background: var(--primary-soft);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          var(--primary),
+          var(--primary-light)
+        );
+        border-radius: 10px;
+        width: 0%;
+        transition: width 1.5s var(--spring);
+        position: relative;
+      }
+      .progress-fill::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        animation: progressGlow 2s infinite;
+      }
+      @keyframes progressGlow {
+        0%,
+        100% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 0.8;
+        }
+      }
+
+      .credential-box {
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 2rem;
+        border: 1px solid var(--border);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+        transition: all 0.4s var(--spring);
+      }
+      .credential-box:hover {
+        box-shadow: var(--shadow);
+      }
+      .cred-item {
+        flex: 1;
+        min-width: 160px;
+        transition: all 0.4s var(--spring);
+        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+      }
+      .cred-item:hover {
+        background: var(--surface2);
+        transform: translateX(6px);
+      }
+      .cred-item strong {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+        color: var(--primary);
+      }
+      .cred-view {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        background: var(--primary-soft);
+        padding: 0.3rem 1.2rem;
+        border-radius: 40px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--primary);
+        cursor: pointer;
+        border: none;
+        margin-top: 0.5rem;
+        transition: all 0.3s var(--spring);
+      }
+      .cred-view:hover {
+        background: var(--primary);
+        color: white;
+        transform: scale(1.05) translateY(-2px);
+        box-shadow: 0 4px 15px rgba(177, 62, 42, 0.2);
+      }
+      .cred-view:active {
+        transform: scale(0.94);
+      }
+
+      .counter-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+      .counter-item {
+        text-align: center;
+        background: var(--surface);
+        padding: 1.5rem;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--spring);
+      }
+      .counter-item:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+      }
+      .counter-number {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        line-height: 1.2;
+      }
+      .counter-label {
+        font-size: 0.85rem;
+        color: var(--text2);
+        margin-top: 0.3rem;
+      }
+
+      .marquee-container {
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 1.5rem 0.5rem;
+        border: 1px solid var(--border);
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+      }
+      .marquee-container::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80px;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, var(--surface));
+        pointer-events: none;
+        z-index: 2;
+      }
+      .marquee-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 100%;
+        background: linear-gradient(270deg, transparent, var(--surface));
+        pointer-events: none;
+        z-index: 2;
+      }
+      .marquee-track {
+        display: inline-block;
+        animation: scrollMarquee 45s linear infinite;
+      }
+      @keyframes scrollMarquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .marquee-track img {
+        height: 170px;
+        width: auto;
+        object-fit: cover;
+        border-radius: 16px;
+        margin: 0 10px;
+        box-shadow: var(--shadow);
+        border: 1px solid var(--border);
+        vertical-align: middle;
+        transition: all 0.4s var(--spring);
+      }
+      .marquee-track img:hover {
+        transform: scale(1.05) translateY(-4px);
+        z-index: 10;
+        position: relative;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      }
+      .marquee-container:hover .marquee-track {
+        animation-play-state: paused;
+      }
+      .evidence-caption {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--text2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+      }
+      .evidence-caption .caption-item {
+        background: var(--primary-soft);
+        padding: 0.3rem 1.2rem;
+        border-radius: 40px;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s var(--spring);
+        border: 1px solid transparent;
+      }
+      .evidence-caption .caption-item:hover {
+        background: var(--primary-light);
+        transform: scale(1.04) translateY(-2px);
+        box-shadow: 0 4px 20px rgba(177, 62, 42, 0.12);
+        border-color: var(--primary);
+      }
+
+      .comparison-table {
+        background: var(--surface);
+        border-radius: var(--radius);
+        padding: 2rem;
+        border: 1px solid var(--border);
+        margin-top: 1rem;
+        transition: all 0.4s var(--spring);
+      }
+      .comparison-table:hover {
+        box-shadow: var(--shadow);
+      }
+      .comparison-row {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 0;
+        gap: 0.5rem;
+        transition: all 0.3s var(--ios);
+      }
+      .comparison-row:hover {
+        background: var(--surface2);
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        border-radius: var(--radius-sm);
+        margin: 0 -0.5rem;
+      }
+      .comparison-row:last-child {
+        border-bottom: none;
+      }
+      .comp-cat {
+        flex: 1.2;
+        font-weight: 700;
+        color: var(--primary);
+      }
+      .comp-current {
+        flex: 2;
+      }
+      .comp-industry {
+        flex: 2;
+        background: var(--primary-soft);
+        border-radius: var(--radius-sm);
+        padding: 0.4rem 1rem;
+        transition: all 0.3s var(--spring);
+      }
+      .comp-industry:hover {
+        background: var(--primary);
+        color: white;
+        transform: scale(1.02);
+      }
+
+      .reflection-wrapper {
+        background: var(--surface);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all 0.4s var(--spring);
+      }
+      .reflection-wrapper:hover {
+        box-shadow: 0 20px 60px rgba(177, 62, 42, 0.06);
+      }
+      .reflection-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        background: var(--surface2);
+        border-bottom: 1px solid var(--border);
+        gap: 0.2rem;
+        padding: 0.5rem 1rem 0 1rem;
+      }
+      .reflection-tab {
+        padding: 0.8rem 1.8rem;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: var(--text2);
+        cursor: pointer;
+        border-radius: 16px 16px 0 0;
+        transition: all 0.4s var(--spring);
+        background: transparent;
+        border: none;
+        font-family: inherit;
+        position: relative;
+      }
+      .reflection-tab::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background: var(--primary);
+        transition: all 0.4s var(--spring);
+        transform: translateX(-50%);
+        border-radius: 3px 3px 0 0;
+      }
+      .reflection-tab:hover::before,
+      .reflection-tab.active::before {
+        width: 60%;
+      }
+      .reflection-tab:hover {
+        background: var(--primary-soft);
+        color: var(--primary);
+        transform: translateY(-2px);
+      }
+      .reflection-tab.active {
+        background: var(--surface);
+        color: var(--primary);
+      }
+      .reflection-tab:active {
+        transform: scale(0.96);
+      }
+      .reflection-panes {
+        padding: 2.5rem;
+      }
+      .reflection-pane {
+        display: none;
+        animation: paneFadeIn 0.5s var(--spring);
+      }
+      @keyframes paneFadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(12px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      .reflection-pane.active-pane {
+        display: block;
+      }
+      .journey-card,
+      .hire-card {
+        background: var(--surface);
+        border-radius: var(--radius-sm);
+        padding: 2rem;
+        border: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+        transition: all 0.4s var(--spring);
+      }
+      .journey-card:hover,
+      .hire-card:hover {
+        box-shadow: var(--shadow);
+        transform: translateY(-3px);
+      }
+      .quote-block {
+        background: var(--primary-soft);
+        border-radius: var(--radius-sm);
+        padding: 1.8rem;
+        text-align: center;
+        font-weight: 500;
+        color: var(--primary);
+        border-left: 6px solid var(--primary);
+        margin-top: 1rem;
+        transition: all 0.4s var(--spring);
+      }
+      .quote-block:hover {
+        transform: scale(1.01);
+        box-shadow: 0 4px 20px rgba(177, 62, 42, 0.08);
+      }
+      .two-col-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .career-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .career-subsection {
+        background: var(--surface2);
+        border-radius: var(--radius-sm);
+        padding: 1.5rem;
+        border-left: 4px solid var(--primary);
+        transition: all 0.4s var(--spring);
+      }
+      .career-subsection:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow);
+      }
+      .career-subsection h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+        color: var(--primary);
+        font-weight: 700;
+      }
+      .career-subsection ul,
+      .career-subsection p {
+        font-size: 0.9rem;
+        color: var(--text2);
+        line-height: 1.6;
+        margin-left: 1.2rem;
+      }
+      .career-subsection li {
+        margin: 0.4rem 0;
+      }
+
+      .roadmap-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .roadmap-phase {
+        background: var(--surface);
+        border-radius: var(--radius);
+        border: 1px solid var(--border);
+        overflow: hidden;
+        transition: all 0.4s var(--spring);
+      }
+      .roadmap-phase:hover {
+        box-shadow: var(--shadow);
+        transform: translateY(-3px);
+      }
+      .roadmap-header {
+        background: var(--surface2);
+        padding: 1rem 1.8rem;
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: var(--primary);
+        border-bottom: 1px solid var(--border);
+      }
+      .roadmap-body {
+        padding: 1.5rem 1.8rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-between;
+      }
+      .roadmap-item {
+        flex: 1;
+        min-width: 170px;
+        transition: all 0.4s var(--spring);
+        padding: 0.5rem;
+        border-radius: var(--radius-sm);
+      }
+      .roadmap-item:hover {
+        background: var(--surface2);
+        transform: scale(1.02) translateY(-2px);
+      }
+      .roadmap-year {
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: var(--primary);
+        margin-bottom: 0.6rem;
+        display: inline-block;
+        border-bottom: 2px solid var(--primary-light);
+        padding-bottom: 0.2rem;
+        transition: all 0.3s var(--spring);
+      }
+      .roadmap-item:hover .roadmap-year {
+        border-bottom-color: var(--primary);
+        transform: scale(1.04);
+      }
+      .roadmap-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--text2);
+      }
+
+      .btn-resume {
+        background: var(--primary);
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 40px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        border: none;
+        transition: all 0.3s var(--spring);
+      }
+      .btn-resume:hover {
+        transform: translateY(-3px) scale(1.04);
+        box-shadow: 0 8px 25px rgba(177, 62, 42, 0.25);
+      }
+      .btn-resume:active {
+        transform: scale(0.94);
+      }
+      .btn-resume-outline {
+        background: transparent;
+        border: 1.5px solid var(--primary);
+        color: var(--primary);
+      }
+      .btn-resume-outline:hover {
+        background: var(--primary-soft);
+      }
+
+      .fullscreen-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.92);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+      }
+      .fullscreen-overlay.active {
+        display: flex;
+        animation: overlayFade 0.5s var(--ios);
+      }
+      @keyframes overlayFade {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .fullscreen-overlay img {
+        max-width: 90%;
+        max-height: 90%;
+        border-radius: 24px;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+        object-fit: contain;
+        animation: imageZoom 0.6s var(--spring);
+      }
+      @keyframes imageZoom {
+        from {
+          transform: scale(0.85) translateY(20px);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1) translateY(0);
+          opacity: 1;
+        }
+      }
+      .fullscreen-close {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        color: white;
+        font-size: 2.8rem;
+        cursor: pointer;
+        background: none;
+        border: none;
+        transition: all 0.4s var(--spring);
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+      }
+      .fullscreen-close:hover {
+        transform: rotate(90deg) scale(1.1);
+        background: rgba(255, 255, 255, 0.15);
+        color: #d75f47;
+      }
+
+      footer {
+        background: var(--surface2);
+        padding: 2.5rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--text2);
+        border-top: 1px solid var(--border);
+        position: relative;
+        overflow: hidden;
+      }
+      footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--primary),
+          transparent
+        );
+        animation: footerGlow 3s ease-in-out infinite;
+      }
+      @keyframes footerGlow {
+        0%,
+        100% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+      }
+
+      .scroll-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: var(--primary);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        box-shadow: 0 4px 25px rgba(177, 62, 42, 0.25);
+        transition: all 0.4s var(--spring);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 50;
+        border: none;
+        cursor: pointer;
+      }
+      .scroll-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      .scroll-top:hover {
+        transform: translateY(-5px) scale(1.08);
+        box-shadow: 0 8px 35px rgba(177, 62, 42, 0.35);
+      }
+      .scroll-top:active {
+        transform: scale(0.92);
+      }
+      .scroll-top i {
+        font-size: 1.2rem;
+      }
+
+      #progressBar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--primary),
+          var(--primary-light)
+        );
+        width: 0%;
+        z-index: 999;
+        transition: width 0.1s linear;
+      }
+
+      @media (max-width: 780px) {
+        .container {
+          padding: 0 1.3rem;
+        }
+        .nav-container {
+          flex-direction: column;
+          gap: 0.6rem;
+          align-items: stretch;
+          padding: 0.7rem 1.3rem;
+        }
+        .nav-links {
+          gap: 0.6rem;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .nav-links a {
+          font-size: 0.78rem;
+        }
+        h1 {
+          font-size: 2.4rem;
+        }
+        h2 {
+          font-size: 1.8rem;
+        }
+        .hero-grid {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+        .btn-group {
+          justify-content: center;
+        }
+        .comparison-row {
+          flex-direction: column;
+          gap: 0.4rem;
+        }
+        .two-col-grid {
+          grid-template-columns: 1fr;
+        }
+        .marquee-track img {
+          height: 110px;
+        }
+        .reflection-tab {
+          padding: 0.5rem 1rem;
+          font-size: 0.75rem;
+        }
+        .reflection-panes {
+          padding: 1.2rem;
+        }
+        .hero::before {
+          display: none;
+        }
+        .fullscreen-close {
+          top: 16px;
+          right: 16px;
+          width: 44px;
+          height: 44px;
+          font-size: 2rem;
+        }
+        .counter-number {
+          font-size: 2.2rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+        .credential-box {
+          flex-direction: column;
+        }
+        .marquee-track img {
+          height: 80px;
+        }
+        .scroll-top {
+          width: 44px;
+          height: 44px;
+          bottom: 20px;
+          right: 20px;
+        }
+        .section {
+          padding: 3rem 0;
+        }
+        .counter-number {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="particles-canvas"></canvas>
+    <div id="progressBar"></div>
+
+    <div class="fullscreen-overlay" id="fsOverlay">
+      <button class="fullscreen-close" id="fsClose">
+        <i class="fas fa-times"></i>
+      </button>
+      <img id="fsImage" src="" alt="fullscreen" />
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="logo-area">
+          <img src="nad.jpeg" alt="Nurul" class="logo-img" />
+          <span class="logo-text">Nurul Ain</span>
+        </div>
+        <div class="nav-links">
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certificates</a>
+          <a href="#evidence">Evidence</a>
+          <a href="#career">Career</a>
+          <a href="#comparison">Industry</a>
+          <a href="#roadmap">Roadmap</a>
+          <a href="#reflection">Reflection</a>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i><span id="themeLabel">Dark</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">Red Team · Security Developer</div>
+            <h1>Nurul Ain Nadhirah</h1>
+            <p id="typewriter">
+              <span id="typed-text"></span><span class="cursor"></span>
+            </p>
+            <div class="btn-group">
+              <a href="#comparison" class="btn">Industry alignment</a>
+              <a href="#reflection" class="btn btn-outline">Reflection</a>
+              <a
+                href="https://drive.google.com/file/d/1Znw7sd3rXA4yBt2CGKajb70AEc4BgF8S/view?usp=sharing"
+                target="_blank"
+                class="btn btn-resume btn-resume-outline"
+                ><i class="fas fa-file-pdf"></i> Resume 1</a
+              >
+              <a
+                href="https://drive.google.com/file/d/1jCJEiGTNU8WKy7S1ipBc17ods-Pxww8o/view?usp=sharing"
+                target="_blank"
+                class="btn btn-resume"
+                ><i class="fas fa-file-pdf"></i> Resume 2</a
+              >
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="nad.jpeg" alt="Nurul profile" />
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills & Competencies</h2>
+          <div class="skills-grid">
+            <div class="skill-card" data-tilt>
+              <div class="skill-card-inner">
+                <div class="skill-title">Technical Arsenal</div>
+                <ul class="skill-list">
+                  <li>Python / C</li>
+                  <li>CCNA</li>
+                  <li>Digital Forensics</li>
+                  <li>Penetration Testing</li>
+                  <li>WebApp Pentesting</li>
+                  <li>Exploit Dev</li>
+                </ul>
+                <div style="margin-top: 1rem">
+                  <span class="chip">Wireshark</span
+                  ><span class="chip">Linux</span
+                  ><span class="chip">Burp Suite</span>
+                  <span class="chip">Autopsy</span
+                  ><span class="chip">HexEdit</span
+                  ><span class="chip">WebGoat</span>
+                </div>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>Python</span
+                    ><span class="value" data-count="90">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="90"></div>
+                  </div>
+                </div>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>CCNA</span
+                    ><span class="value" data-count="85">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>Web Pentesting</span
+                    ><span class="value" data-count="80">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card" data-tilt>
+              <div class="skill-card-inner">
+                <div class="skill-title">Specialized Domains</div>
+                <ul class="skill-list">
+                  <li>Memory Forensics</li>
+                  <li>Vulnerability Research</li>
+                  <li>Red Team Ops</li>
+                  <li>Secure Coding</li>
+                  <li>Threat Modeling</li>
+                </ul>
+                <p style="margin-top: 1rem; font-size: 0.9rem">
+                  OWASP Top 10, CVE risk assessment, adversarial simulation.
+                </p>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>Forensics</span
+                    ><span class="value" data-count="78">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="78"></div>
+                  </div>
+                </div>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>Red Team Ops</span
+                    ><span class="value" data-count="75">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="75"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card" data-tilt>
+              <div class="skill-card-inner">
+                <div class="skill-title">Soft Skills</div>
+                <ul class="skill-list">
+                  <li>Teamwork</li>
+                  <li>Responsible</li>
+                  <li>Trustworthy</li>
+                  <li>Analytical</li>
+                  <li>Problem Solving</li>
+                </ul>
+                <p style="margin-top: 0.8rem; font-size: 0.9rem">
+                  Balancing deep-dives with transparent collaboration.
+                </p>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>Communication</span
+                    ><span class="value" data-count="85">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="85"></div>
+                  </div>
+                </div>
+                <div class="skill-progress-item">
+                  <div class="label">
+                    <span>Problem Solving</span
+                    ><span class="value" data-count="88">0%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" data-width="88"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section">
+        <div class="container">
+          <h2>Certificates & Academic</h2>
+          <div class="credential-box">
+            <div class="cred-item">
+              <strong>Bachelor of Computer Science (Hons)</strong>
+              <span style="font-size: 0.85rem">Computer Network Security</span>
+            </div>
+            <div class="cred-item">
+              <strong>EXACAB Certification</strong>
+              <span style="font-size: 0.85rem"
+                >Virtual Reality & Digital Worlds</span
+              >
+              <button class="cred-view" data-src="cert1.jpeg">
+                <i class="fas fa-eye"></i> View
+              </button>
+            </div>
+            <div class="cred-item">
+              <strong>Metaverse Certification</strong>
+              <span style="font-size: 0.85rem"
+                >Advanced Metaverse Technologies</span
+              >
+              <button class="cred-view" data-src="cert2.jpeg">
+                <i class="fas fa-eye"></i> View
+              </button>
+            </div>
+            <div class="cred-item">
+              <strong>Computer Networking</strong>
+              <span style="font-size: 0.85rem"
+                >Forziq Smartnetwork Bootcamp</span
+              >
+            </div>
+            <div class="cred-item">
+              <strong>Continuous Training</strong>
+              <span style="font-size: 0.85rem">TryHackMe, WebGoat, CTFs</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence" class="section">
+        <div class="container">
+          <h2>Evidence of Learning</h2>
+          <div class="marquee-container">
+            <div class="marquee-track">
+              <img src="nad2.jpeg" alt="forensics" />
+              <img src="nad3.jpeg" alt="network" />
+              <img src="nad5.png" alt="web pentest" />
+              <img src="nad6.png" alt="exploit" />
+              <img src="nad8.png" alt="wireshark" />
+              <img src="nad9.png" alt="burp" />
+              <img src="nad10.png" alt="memory" />
+              <img src="nad11.jpg" alt="autopsy" />
+              <img src="nad12.png" alt="linux" />
+              <img src="nad7.JPG" alt="red team" />
+              <img src="nad13.png" alt="webgoat" />
+              <img src="nad14.jpeg" alt="data center" />
+              <img src="nad15.jpeg" alt="lab" />
+              <img src="nad16.jpeg" alt="analysis" />
+              <img src="nad17.jpeg" alt="network" />
+              <img src="nad18.jpeg" alt="security" />
+              <img src="nad14.jpeg" alt="data center" />
+            </div>
+          </div>
+          <div class="evidence-caption">
+            <span
+              >Web penetration testing, network topology, SQLi, forensic
+              handling, traffic analysis,</span
+            >
+            <span class="caption-item" id="dataCenterCaption"
+              ><i class="fas fa-server"></i> Data Center PPIR UniSZA Visit</span
+            >
+            <span
+              >real cybersecurity case solving (Johor government) and practical
+              network security exercises.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="career" class="section">
+        <div class="container">
+          <h2>Career: Security Software Developer (Red Team)</h2>
+          <div
+            style="
+              background: var(--surface);
+              border-radius: var(--radius);
+              padding: 2.5rem;
+              border: 1px solid var(--border);
+              transition: all 0.4s var(--spring);
+            "
+          >
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem">
+              I aspire to become a
+              <strong
+                >Security Software Developer with a Red Team mindset</strong
+              >. This role combines secure software development with offensive
+              security techniques to identify vulnerabilities and build
+              resilient systems.
+            </p>
+            <div class="career-grid">
+              <div class="career-subsection">
+                <h4>Responsibilities</h4>
+                <ul>
+                  <li>Develop secure applications and security tools.</li>
+                  <li>Perform vulnerability assessments and code reviews.</li>
+                  <li>Conduct web penetration testing and threat modeling.</li>
+                  <li>Implement secure coding practices.</li>
+                  <li>Collaborate with security teams.</li>
+                </ul>
+              </div>
+              <div class="career-subsection">
+                <h4>Required Skills</h4>
+                <ul>
+                  <li>Programming and secure coding.</li>
+                  <li>Networking and cybersecurity concepts.</li>
+                  <li>Web application security.</li>
+                  <li>Analytical and problem-solving.</li>
+                  <li>Communication and teamwork.</li>
+                </ul>
+              </div>
+              <div class="career-subsection">
+                <h4>Relevance to Modern Cybersecurity</h4>
+                <p>
+                  Security Software Developers protect applications and
+                  infrastructure from evolving threats. By understanding both
+                  development and attacker techniques, they help organizations
+                  reduce vulnerabilities and build resilient systems, critical
+                  for cloud, fintech, and critical infrastructure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparison" class="section">
+        <div class="container">
+          <h2>Current Skills vs. Industry Needs</h2>
+          <div class="comparison-table">
+            <div class="comparison-row">
+              <div class="comp-cat">Network Defense</div>
+              <div class="comp-current">
+                <strong>Current:</strong> CCNA, Wireshark, network forensics,
+                ACL
+              </div>
+              <div class="comp-industry">
+                <strong>Need:</strong> Zero-trust, IDS/IPS, perimeter monitoring
+              </div>
+            </div>
+            <div class="comparison-row">
+              <div class="comp-cat">Offensive Security</div>
+              <div class="comp-current">
+                <strong>Current:</strong> Burp Suite, WebGoat, Python exploits,
+                fuzzing
+              </div>
+              <div class="comp-industry">
+                <strong>Need:</strong> Web app pentesting, red team simulation,
+                OWASP
+              </div>
+            </div>
+            <div class="comparison-row">
+              <div class="comp-cat">Forensics & IR</div>
+              <div class="comp-current">
+                <strong>Current:</strong> Autopsy, HexEdit, memory analysis,
+                logs
+              </div>
+              <div class="comp-industry">
+                <strong>Need:</strong> Incident response, evidence collection,
+                root cause
+              </div>
+            </div>
+            <div class="comparison-row">
+              <div class="comp-cat">Secure Development</div>
+              <div class="comp-current">
+                <strong>Current:</strong> Input sanitization, least privilege,
+                secure error handling
+              </div>
+              <div class="comp-industry">
+                <strong>Need:</strong> DevSecOps, SAST/DAST, threat modeling
+              </div>
+            </div>
+            <div class="comparison-row">
+              <div class="comp-cat">Soft Power</div>
+              <div class="comp-current">
+                <strong>Current:</strong> Accountability, independent research,
+                red team drills
+              </div>
+              <div class="comp-industry">
+                <strong>Need:</strong> Responsible disclosure, team synergy,
+                high-pressure comms
+              </div>
+            </div>
+          </div>
+          <p
+            style="
+              margin-top: 1.5rem;
+              background: var(--primary-soft);
+              padding: 1rem 1.4rem;
+              border-radius: var(--radius-sm);
+              font-size: 0.9rem;
+              transition: all 0.3s var(--spring);
+            "
+          >
+            <strong>Gap analysis:</strong> My skills directly match mid-level
+            security engineering & red team requirements. Continuous improvement
+            in cloud security (AWS/Azure) is next, but core
+            network/web/forensics are production-ready.
+          </p>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section">
+        <div class="container">
+          <h2>5-Year Career Roadmap</h2>
+          <div class="roadmap-grid">
+            <div class="roadmap-phase">
+              <div class="roadmap-header">
+                Short-term (Foundation & Specialization)
+              </div>
+              <div class="roadmap-body">
+                <div class="roadmap-item">
+                  <div class="roadmap-year">Year 1</div>
+                  <div class="roadmap-desc">
+                    Earn OSCP, master AD attacks, build custom C2, automate
+                    network hardening.
+                  </div>
+                </div>
+                <div class="roadmap-item">
+                  <div class="roadmap-year">Year 2</div>
+                  <div class="roadmap-desc">
+                    AWS Certified Security, container forensics, lead red team
+                    workshops.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="roadmap-phase">
+              <div class="roadmap-header">
+                Long-term (Leadership & Strategic Impact)
+              </div>
+              <div class="roadmap-body">
+                <div class="roadmap-item">
+                  <div class="roadmap-year">Year 3</div>
+                  <div class="roadmap-desc">
+                    Senior security engineer, mentor juniors, develop Sigma
+                    rules.
+                  </div>
+                </div>
+                <div class="roadmap-item">
+                  <div class="roadmap-year">Year 4</div>
+                  <div class="roadmap-desc">
+                    OSEP or CISSP, offensive research, automate risk validation.
+                  </div>
+                </div>
+                <div class="roadmap-item">
+                  <div class="roadmap-year">Year 5</div>
+                  <div class="roadmap-desc">
+                    Lead red team architect, influence security culture,
+                    incident commander.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p
+            style="
+              margin-top: 1.5rem;
+              background: var(--primary-soft);
+              padding: 1rem 1.4rem;
+              border-radius: var(--radius-sm);
+              font-size: 0.9rem;
+              transition: all 0.3s var(--spring);
+            "
+          >
+            <strong>Commitment:</strong> Each milestone aligns with data center
+            threat landscape. Continuous CTF participation will accelerate every
+            phase.
+          </p>
+        </div>
+      </section>
+
+      <section id="reflection" class="section">
+        <div class="container">
+          <h2>Personal Reflection</h2>
+          <div class="reflection-wrapper">
+            <div class="reflection-tabs">
+              <button class="reflection-tab active" data-tab="journey">
+                Journey
+              </button>
+              <button class="reflection-tab" data-tab="whydayone">
+                Dream Company
+              </button>
+              <button class="reflection-tab" data-tab="value">
+                Value & Skills
+              </button>
+              <button class="reflection-tab" data-tab="strength">
+                Strengths
+              </button>
+              <button class="reflection-tab" data-tab="hire">
+                Why Hire Me
+              </button>
+              <button class="reflection-tab" data-tab="responsibility">
+                Red Team
+              </button>
+            </div>
+            <div class="reflection-panes">
+              <div class="reflection-pane active-pane" id="pane-journey">
+                <div class="journey-card">
+                  <h3 style="margin-top: 0; color: var(--primary)">
+                    Journey as a Security-First Developer
+                  </h3>
+                  <p>
+                    Throughout my degree and hands-on labs, I realized that
+                    cybersecurity is not just about fixing vulnerabilities but
+                    about understanding how systems can be broken and rebuilt
+                    more securely. My journey started with networking
+                    fundamentals (CCNA), then expanded into web penetration
+                    testing and digital forensics. This combination shaped my
+                    mindset to think like an attacker while still building and
+                    maintaining secure systems. I aim to grow into a Red
+                    Team-oriented security professional who can bridge offensive
+                    insights with defensive improvements.
+                  </p>
+                </div>
+                <div class="quote-block">
+                  "Secure systems are not built by chance, they are built by
+                  those who understand how they break."
+                </div>
+              </div>
+              <div class="reflection-pane" id="pane-whydayone">
+                <div class="journey-card">
+                  <h3 style="margin-top: 0; color: var(--primary)">
+                    Dream Company: DayOne NTP Data Center
+                  </h3>
+                  <p>
+                    I am particularly interested in contributing to DayOne NTP
+                    Data Center because it focuses on critical infrastructure
+                    that requires strong cybersecurity protection, where
+                    effective security practices are essential to ensure system
+                    reliability and defense against evolving cyber threats.
+                    Working in such an environment allows me to apply my skills
+                    in networking, digital forensics, and penetration testing to
+                    real-world systems that are highly important and sensitive.
+                  </p>
+                  <div
+                    style="
+                      background: var(--primary-soft);
+                      border-radius: var(--radius-sm);
+                      padding: 1rem;
+                      margin-top: 1rem;
+                      transition: all 0.3s var(--spring);
+                    "
+                  >
+                    <p style="margin: 0">
+                      <strong>Critical Infrastructure Focus</strong>: Protecting
+                      Johor Bahru's digital backbone aligns with my passion for
+                      high-impact security work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reflection-pane" id="pane-value">
+                <div class="journey-card">
+                  <h3 style="margin-top: 0; color: var(--primary)">
+                    What Value I Can Bring
+                  </h3>
+                  <ul style="margin-left: 1.5rem; line-height: 1.8">
+                    <li>
+                      Ability to identify vulnerabilities through offensive
+                      security thinking
+                    </li>
+                    <li>
+                      Strong foundation in networking (CCNA) for infrastructure
+                      understanding
+                    </li>
+                    <li>
+                      Experience in digital forensics for incident investigation
+                    </li>
+                    <li>Hands-on exposure to web penetration testing tools</li>
+                    <li>
+                      Commitment to clear documentation and actionable findings
+                    </li>
+                    <li>
+                      Continuous learning mindset to adapt to evolving threats
+                    </li>
+                  </ul>
+                  <h3 style="margin-top: 1.5rem; color: var(--primary)">
+                    Skills That Make Me Suitable
+                  </h3>
+                  <div class="two-col-grid">
+                    <div>
+                      <strong>Technical Skills</strong>
+                      <div style="margin-top: 0.5rem">
+                        <span class="chip">Network Security</span
+                        ><span class="chip">CCNA</span
+                        ><span class="chip">Web Penetration Testing</span
+                        ><span class="chip">Digital Forensics</span
+                        ><span class="chip">Wireshark</span
+                        ><span class="chip">Burp Suite</span
+                        ><span class="chip">Autopsy</span
+                        ><span class="chip">Python/C</span>
+                      </div>
+                    </div>
+                    <div>
+                      <strong>Soft Skills</strong>
+                      <div style="margin-top: 0.5rem">
+                        <span class="chip">Analytical Thinking</span
+                        ><span class="chip">Problem-solving</span
+                        ><span class="chip">Responsibility</span
+                        ><span class="chip">Integrity</span
+                        ><span class="chip">Team Collaboration</span
+                        ><span class="chip">Adaptability</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reflection-pane" id="pane-strength">
+                <div class="journey-card">
+                  <h3 style="margin-top: 0; color: var(--primary)">
+                    Strengths and Weaknesses
+                  </h3>
+                  <div class="two-col-grid">
+                    <div>
+                      <strong>Strengths</strong>
+                      <div style="margin-top: 0.5rem">
+                        • Strong attention to detail in forensic and security
+                        analysis<br />• Systematic problem-solving approach<br />•
+                        High integrity when handling sensitive findings<br />•
+                        Able to work independently and in team environments
+                      </div>
+                    </div>
+                    <div>
+                      <strong>Weakness</strong>
+                      <div style="margin-top: 0.5rem">
+                        • I tend to validate findings independently for too long
+                        before sharing them
+                      </div>
+                      <strong style="display: block; margin-top: 1rem"
+                        >Improvement Plan</strong
+                      >
+                      <div>
+                        • I am actively improving this by communicating
+                        preliminary findings earlier during tasks to improve
+                        team response time and collaboration.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="reflection-pane" id="pane-hire">
+                <div class="hire-card">
+                  <h3 style="margin-top: 0; color: var(--primary)">
+                    Why DayOne Nusajaya Tech Park Should Hire Me
+                  </h3>
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: repeat(
+                        auto-fit,
+                        minmax(220px, 1fr)
+                      );
+                      gap: 1.5rem;
+                    "
+                  >
+                    <div
+                      style="
+                        background: var(--surface2);
+                        border-radius: var(--radius-sm);
+                        padding: 1.4rem;
+                        border: 1px solid var(--border);
+                        transition: all 0.3s var(--spring);
+                      "
+                    >
+                      <strong style="color: var(--primary)"
+                        >Value Proposition</strong
+                      >
+                      <p style="margin-top: 0.5rem">
+                        Combine CCNA level networking, web pentesting and
+                        forensics exactly what modern data centers need for
+                        proactive defense.
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        background: var(--surface2);
+                        border-radius: var(--radius-sm);
+                        padding: 1.4rem;
+                        border: 1px solid var(--border);
+                        transition: all 0.3s var(--spring);
+                      "
+                    >
+                      <strong style="color: var(--primary)"
+                        >Practical Evidence</strong
+                      >
+                      <p style="margin-top: 0.5rem">
+                        Hands on labs from memory forensics to Burp Suite
+                        attacks, proven by portfolio screenshots and red team
+                        simulations.
+                      </p>
+                    </div>
+                    <div
+                      style="
+                        background: var(--surface2);
+                        border-radius: var(--radius-sm);
+                        padding: 1.4rem;
+                        border: 1px solid var(--border);
+                        transition: all 0.3s var(--spring);
+                      "
+                    >
+                      <strong style="color: var(--primary)">Mindset Fit</strong>
+                      <p style="margin-top: 0.5rem">
+                        Secure by design thinking with integrity-first approach
+                        critical for Johor Bahru's strategic data center.
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      margin-top: 2rem;
+                      background: var(--primary-soft);
+                      border-radius: var(--radius-sm);
+                      padding: 1.5rem;
+                      text-align: center;
+                      transition: all 0.3s var(--spring);
+                    "
+                  >
+                    <p style="font-weight: 500">
+                      I turn offensive insights into defensive resilience. For
+                      DayOne NTP, I will be the developer who finds the flaw
+                      before the adversary does.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="reflection-pane" id="pane-responsibility">
+                <div class="hire-card">
+                  <h3 style="margin-top: 0; color: var(--primary)">
+                    Red Team Responsibility – DayOne Readiness
+                  </h3>
+                  <p>
+                    Applying adversarial simulation, secure SDLC, and zero-trust
+                    principles to data center operations. Every script, network
+                    ACL, and web dashboard is viewed through an attacker's lens
+                    reducing blast radius and enforcing defense-in-depth. For
+                    DayOne NTP, I am ready to contribute to red-blue exercises,
+                    forensic readiness, and secure infrastructure automation.
+                  </p>
+                  <div style="margin-top: 1rem">
+                    <span class="chip">Threat modeling</span
+                    ><span class="chip">Secure SDLC</span
+                    ><span class="chip">Exploit mitigation</span
+                    ><span class="chip">Network hardening</span
+                    ><span class="chip">Incident response</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Nurul Ain Nadhirah &copy; 2026. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      (function () {
+        const toggle = document.getElementById("themeToggle");
+        const label = document.getElementById("themeLabel");
+        const html = document.documentElement;
+        const current = localStorage.getItem("theme") || "light";
+        if (current === "dark") {
+          html.classList.add("dark");
+          label.textContent = "Light";
+          toggle.innerHTML =
+            '<i class="fas fa-sun"></i><span id="themeLabel">Light</span>';
+        }
+        toggle.addEventListener("click", function () {
+          html.classList.toggle("dark");
+          const isDark = html.classList.contains("dark");
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+          label.textContent = isDark ? "Light" : "Dark";
+          toggle.innerHTML = isDark
+            ? '<i class="fas fa-sun"></i><span id="themeLabel">Light</span>'
+            : '<i class="fas fa-moon"></i><span id="themeLabel">Dark</span>';
         });
-      });
-    });
-  </script>
-</body>
+
+        const tabs = document.querySelectorAll(".reflection-tab");
+        const panes = document.querySelectorAll(".reflection-pane");
+
+        function switchTab(tabId) {
+          tabs.forEach((t) => t.classList.remove("active"));
+          panes.forEach((p) => p.classList.remove("active-pane"));
+          const selectedTab = document.querySelector(
+            `.reflection-tab[data-tab="${tabId}"]`,
+          );
+          if (selectedTab) selectedTab.classList.add("active");
+          const selectedPane = document.getElementById(`pane-${tabId}`);
+          if (selectedPane) selectedPane.classList.add("active-pane");
+        }
+        tabs.forEach((tab) =>
+          tab.addEventListener("click", function () {
+            switchTab(this.getAttribute("data-tab"));
+          }),
+        );
+
+        const overlay = document.getElementById("fsOverlay");
+        const fsImage = document.getElementById("fsImage");
+        const fsClose = document.getElementById("fsClose");
+
+        function openFullscreen(src) {
+          if (src) {
+            fsImage.src = src;
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+          }
+        }
+
+        function closeFullscreen() {
+          overlay.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+
+        document.querySelectorAll(".cred-view").forEach((btn) => {
+          btn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            const src = this.getAttribute("data-src");
+            openFullscreen(src);
+          });
+        });
+
+        const dataCenterCaption = document.getElementById("dataCenterCaption");
+        if (dataCenterCaption) {
+          dataCenterCaption.addEventListener("click", function () {
+            openFullscreen("nad14.jpeg");
+          });
+        }
+
+        fsClose.addEventListener("click", closeFullscreen);
+        overlay.addEventListener("click", function (e) {
+          if (e.target === overlay) closeFullscreen();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closeFullscreen();
+        });
+
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 30) {
+            navbar.classList.add("scrolled");
+          } else {
+            navbar.classList.remove("scrolled");
+          }
+        });
+
+        const scrollTop = document.getElementById("scrollTop");
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 500) {
+            scrollTop.classList.add("visible");
+          } else {
+            scrollTop.classList.remove("visible");
+          }
+        });
+        scrollTop.addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.08,
+            rootMargin: "0px 0px -40px 0px",
+          },
+        );
+
+        document.querySelectorAll(".section").forEach((section) => {
+          observer.observe(section);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              e.preventDefault();
+              const offset = 80;
+              const targetPosition =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                offset;
+              window.scrollTo({ top: targetPosition, behavior: "smooth" });
+            }
+          });
+        });
+
+        const typedText = document.getElementById("typed-text");
+        const text =
+          "Offensive security mindset fused with defensive development.";
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+          if (!isDeleting) {
+            if (charIndex < text.length) {
+              typedText.textContent += text.charAt(charIndex);
+              charIndex++;
+              setTimeout(typeEffect, 30);
+            } else {
+              setTimeout(() => {
+                isDeleting = true;
+                setTimeout(typeEffect, 1000);
+              }, 3000);
+            }
+          } else {
+            if (charIndex > 0) {
+              typedText.textContent = text.substring(0, charIndex - 1);
+              charIndex--;
+              setTimeout(typeEffect, 15);
+            } else {
+              isDeleting = false;
+              setTimeout(typeEffect, 500);
+            }
+          }
+        }
+        typeEffect();
+
+        const progressBar = document.getElementById("progressBar");
+        window.addEventListener("scroll", () => {
+          const scrollTop = window.scrollY;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+          const progress = (scrollTop / docHeight) * 100;
+          progressBar.style.width = progress + "%";
+        });
+
+        const skillCards = document.querySelectorAll("[data-tilt]");
+        skillCards.forEach((card) => {
+          card.addEventListener("mousemove", (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = ((y - centerY) / centerY) * -10;
+            const rotateY = ((x - centerX) / centerX) * 10;
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+          });
+          card.addEventListener("mouseleave", () => {
+            card.style.transform =
+              "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
+          });
+        });
+
+        const counters = document.querySelectorAll(".counter-number");
+        const counterObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const target = parseInt(
+                  entry.target.getAttribute("data-target"),
+                );
+                let current = 0;
+                const increment = target / 60;
+                const updateCounter = () => {
+                  current += increment;
+                  if (current < target) {
+                    entry.target.textContent = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                  } else {
+                    entry.target.textContent = target;
+                  }
+                };
+                updateCounter();
+                counterObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        counters.forEach((counter) => counterObserver.observe(counter));
+
+        const progressObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const fills = entry.target.querySelectorAll(".progress-fill");
+                const values = entry.target.querySelectorAll(".value");
+                fills.forEach((fill, index) => {
+                  const width = fill.getAttribute("data-width");
+                  fill.style.width = width + "%";
+                  if (values[index]) {
+                    values[index].textContent = width + "%";
+                  }
+                });
+                progressObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 },
+        );
+
+        document.querySelectorAll(".skill-card").forEach((card) => {
+          progressObserver.observe(card);
+        });
+
+        const canvas = document.getElementById("particles-canvas");
+        const ctx = canvas.getContext("2d");
+        let particles = [];
+        let mouseX = 0;
+        let mouseY = 0;
+
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+
+        class Particle {
+          constructor() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 3 + 1;
+            this.speedX = (Math.random() - 0.5) * 0.5;
+            this.speedY = (Math.random() - 0.5) * 0.5;
+            this.opacity = Math.random() * 0.5 + 0.2;
+          }
+          update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            if (this.x > canvas.width) this.x = 0;
+            if (this.x < 0) this.x = canvas.width;
+            if (this.y > canvas.height) this.y = 0;
+            if (this.y < 0) this.y = canvas.height;
+
+            const dx = mouseX - this.x;
+            const dy = mouseY - this.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 150) {
+              const force = ((150 - dist) / 150) * 0.02;
+              this.x += dx * force;
+              this.y += dy * force;
+            }
+          }
+          draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(177, 62, 42, ${this.opacity})`;
+            ctx.fill();
+          }
+        }
+
+        for (let i = 0; i < 80; i++) {
+          particles.push(new Particle());
+        }
+
+        document.addEventListener("mousemove", (e) => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        });
+
+        function animateParticles() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          particles.forEach((p) => {
+            p.update();
+            p.draw();
+          });
+
+          for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 120) {
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(177, 62, 42, ${0.1 * (1 - dist / 120)})`;
+                ctx.lineWidth = 0.5;
+                ctx.stroke();
+              }
+            }
+          }
+          requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        if ("ontouchstart" in window) {
+          document.addEventListener("touchmove", (e) => {
+            const touch = e.touches[0];
+            mouseX = touch.clientX;
+            mouseY = touch.clientY;
+          });
+        }
+
+        if ("scrollRestoration" in history) {
+          history.scrollRestoration = "manual";
+        }
+      })();
+    </script>
+  </body>
 </html>
