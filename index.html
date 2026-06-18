@@ -1380,8 +1380,8 @@
             <div class="hero-badge">Red Team · Security Developer</div>
             <h1>Nurul Ain Nadhirah</h1>
             <p id="typewriter">
-              <span id="typed-text"></span><span class="cursor"></span>
-            </p>
+  <span id="typed-text"></span>
+</p>
            <div class="btn-group">
   <a
     href="https://drive.google.com/file/d/1PIRCoYhZlsJ2JEFVErEMwxn4r1BOUPua/view?usp=sharing"
@@ -2243,35 +2243,9 @@
         });
 
         const typedText = document.getElementById("typed-text");
-        const text =
-          "Offensive security mindset fused with defensive development.";
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function typeEffect() {
-          if (!isDeleting) {
-            if (charIndex < text.length) {
-              typedText.textContent += text.charAt(charIndex);
-              charIndex++;
-              setTimeout(typeEffect, 30);
-            } else {
-              setTimeout(() => {
-                isDeleting = true;
-                setTimeout(typeEffect, 1000);
-              }, 3000);
-            }
-          } else {
-            if (charIndex > 0) {
-              typedText.textContent = text.substring(0, charIndex - 1);
-              charIndex--;
-              setTimeout(typeEffect, 15);
-            } else {
-              isDeleting = false;
-              setTimeout(typeEffect, 500);
-            }
-          }
-        }
-        typeEffect();
+const text =
+  "Offensive security mindset fused with defensive development. Cybersecurity is not just about fixing vulnerabilities but about understanding how systems can be broken and rebuilt more securely.";
+typedText.textContent = text;
 
         const progressBar = document.getElementById("progressBar");
         window.addEventListener("scroll", () => {
