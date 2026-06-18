@@ -1132,6 +1132,42 @@
         color: #d75f47;
       }
 
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1.5rem;
+        flex-wrap: wrap;
+      }
+      .social-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: var(--surface);
+        color: var(--text);
+        padding: 0.6rem 1.4rem;
+        border-radius: 44px;
+        font-weight: 500;
+        text-decoration: none;
+        border: 1px solid var(--border);
+        transition: all 0.4s var(--spring);
+        font-size: 0.9rem;
+      }
+      .social-btn i {
+        font-size: 1.2rem;
+        color: var(--primary);
+        transition: all 0.3s var(--spring);
+      }
+      .social-btn:hover {
+        transform: translateY(-4px) scale(1.03);
+        box-shadow: var(--shadow);
+        border-color: var(--primary);
+        background: var(--primary-soft);
+      }
+      .social-btn:hover i {
+        transform: scale(1.15);
+        color: var(--primary);
+      }
+
       footer {
         background: var(--surface2);
         padding: 2.5rem 0;
@@ -1354,6 +1390,20 @@
                 target="_blank"
                 class="btn btn-resume"
                 ><i class="fas fa-file-pdf"></i> View Resume</a
+              >
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/aiennadh"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+              <a
+                href="https://www.linkedin.com/in/aiennadh"
+                target="_blank"
+                class="social-btn"
+                ><i class="fab fa-linkedin-in"></i> LinkedIn</a
               >
             </div>
           </div>
